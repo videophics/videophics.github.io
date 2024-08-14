@@ -14,7 +14,7 @@ import fi from "../utils/firebase";
 const Blogs = collection(getFirestore(fi), "Blogs");
 
 /* Components */
-import Animated from "./components/Animated";
+import Animated from "../components/Animated";
 
 export default function Blog() {
   const [blogslist, setblogs] = useState([]);

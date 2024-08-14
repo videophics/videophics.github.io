@@ -1,9 +1,9 @@
 import { Helmet } from "react-helmet";
 
 /* Components */
-import Contact from "./components/Contact";
-import Animated from "./components/Animated";
-import Booking from "./components/Booking";
+import Contact from "../components/Contact";
+import Animated from "../components/Animated";
+import Booking from "../components/Booking";
 
 export default function ContactUs() {
   return (

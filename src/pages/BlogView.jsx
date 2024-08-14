@@ -19,7 +19,7 @@ import { Helmet } from "react-helmet";
 import fi from "../utils/firebase";
 
 /* Components */
-import TableOfContents from "./components/TableOfContents";
+import TableOfContents from "../components/TableOfContents";
 import NotFound from "./NotFound";
 
 export default function BlogView() {

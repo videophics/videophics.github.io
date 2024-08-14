@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Animated from "../Animated";
+import Animated from "./Animated";
 
 export default function Services() {
   return (

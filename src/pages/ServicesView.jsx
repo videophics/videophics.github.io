@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet";
 
 /* Components */
 import NotFound from "./NotFound";
-import Animated from "./components/Animated";
+import Animated from "../components/Animated";
 
 const Branding = () => {
   return (

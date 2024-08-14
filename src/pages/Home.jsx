@@ -8,9 +8,10 @@ import Animated from "../components/Animated";
 import Booking from "../components/Booking";
 import Services from '../components/Services';
 import Clients from '../components/Clients';
+import { useState } from "react";
 
 export default function Home() {
-  const [isMuted, setMuted] = React.useState(true);
+  const [isMuted, setMuted] = useState(true);
 
   const HGFRJh = () => (<div className="mt-3 flex gap-3 flex-col items-center sm:flex-row">
     <NavLink to="/about-us">

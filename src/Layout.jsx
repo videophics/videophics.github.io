@@ -1,6 +1,6 @@
 import { useEffect } from "react";
-import Navbar from './pages/components/Navbar';
-import Footer from './pages/components/Footer';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 export default function Layout({ children, theme, setTheme }) {
     useEffect(() => {
