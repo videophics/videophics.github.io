@@ -1,4 +1,4 @@
-import React from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
@@ -23,7 +23,7 @@ import edjsParser from "editorjs-parser";
 import { StyleInlineTool } from "editorjs-style";
 
 /* Components */
-import WithAuth from "./components/WithAuth";
+import WithAuth from "../../components/admin/WithAuth";
 
 /* Utils */
 import {
@@ -34,9 +34,9 @@ import {
 import { getSitemap, postSitemap } from "../../utils/sitemap";
 
 function BlogAdd() {
-  const ejInstance = React.useRef(null);
-  const [blogBody, setBlogBody] = React.useState({});
-  const [thumbnail, setThumbnail] = React.useState(null);
+  const ejInstance = useRef(null);
+  const [blogBody, setBlogBody] = useState({});
+  const [thumbnail, setThumbnail] = useState(null);
 
   const DEFAULT_INITIAL_DATA = {
     time: new Date().getTime(),
@@ -253,9 +253,8 @@ function BlogAdd() {
     uploadBlogImage(
       file,
       (snapshot) => {
-        const urlofImage = `https://firebasestorage.googleapis.com/v0/b/${
-          snapshot.ref.bucket
-        }/o/${encodeURIComponent(snapshot.ref.fullPath)}?alt=media`;
+        const urlofImage = `https://firebasestorage.googleapis.com/v0/b/${snapshot.ref.bucket
+          }/o/${encodeURIComponent(snapshot.ref.fullPath)}?alt=media`;
 
         setThumbnail(urlofImage);
       },
@@ -288,7 +287,7 @@ function BlogAdd() {
     );
   };
 
-  React.useEffect(() => {
+  useEffect(() => {
     setTimeout(() => {
       if (
         ejInstance.current === null &&

@@ -1,4 +1,4 @@
-import React from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import {
@@ -13,12 +13,12 @@ import fi from "../../utils/firebase";
 const Blogs = collection(getFirestore(fi), "Blogs");
 
 /* Components */
-import WithAuth from "./components/WithAuth";
+import WithAuth from "../../components/admin/WithAuth";
 
 function Blog() {
-  const [blogslist, setblogs] = React.useState([]);
+  const [blogslist, setblogs] = useState([]);
 
-  React.useEffect(() => {
+  useEffect(() => {
     const unsubscribe = onSnapshot(query(Blogs, limit(10)), (querySnapshot) => {
       const data = querySnapshot.docs.map((doc) => ({
         ...doc.data(),
@@ -32,7 +32,7 @@ function Blog() {
 
   return (
     <WithAuth>
-      {({ user }) => (
+      {() => (
         <>
           <Helmet>
             <title>My Blog - Admin</title>
@@ -105,7 +105,7 @@ function Blog() {
                           </Link>
                         </div>
                       </div>
-                      <a href={blog.thumbnail} target="_blank">
+                      <a href={blog.thumbnail} target="_blank" rel="noreferrer">
                         <img
                           src={blog.thumbnail}
                           alt={blog.title}

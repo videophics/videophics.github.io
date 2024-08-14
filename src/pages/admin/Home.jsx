@@ -1,4 +1,3 @@
-import React from "react";
 import { NavLink } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
@@ -6,7 +5,7 @@ import { Helmet } from "react-helmet";
 import { logOut } from "../../utils/admin";
 
 /* Components */
-import WithAuth from "./components/WithAuth";
+import WithAuth from "../../components/admin/WithAuth";
 
 function Home() {
   const logOutProcess = () => {

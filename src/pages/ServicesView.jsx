@@ -1,4 +1,4 @@
-import React from "react";
+import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
@@ -612,7 +612,7 @@ const SoftwareTesting = () => {
 };
 
 const Layout = ({ children }) => {
-  React.useEffect(() => {
+  useEffect(() => {
     window.scrollTo(0, 0);
   }, [children]);
   return children;

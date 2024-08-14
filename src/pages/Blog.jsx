@@ -1,4 +1,4 @@
-import React from "react";
+import {useState, useEffect} from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import {
@@ -17,9 +17,9 @@ const Blogs = collection(getFirestore(fi), "Blogs");
 import Animated from "./components/Animated";
 
 export default function Blog() {
-  const [blogslist, setblogs] = React.useState([]);
+  const [blogslist, setblogs] = useState([]);
 
-  React.useEffect(() => {
+  useEffect(() => {
     const unsubscribe = onSnapshot(query(Blogs, limit(10)), (querySnapshot) => {
       const data = querySnapshot.docs.map((doc) => ({
         ...doc.data(),

@@ -1,4 +1,5 @@
 /*
+  Schema:-----
    /id
        title
        body
@@ -8,7 +9,7 @@
        thumbnail
 */
 
-import React from "react";
+import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import edjsParser from "editorjs-parser";
 import { getFirestore, doc, getDoc } from "@firebase/firestore";
@@ -22,7 +23,7 @@ import TableOfContents from "./components/TableOfContents";
 import NotFound from "./NotFound";
 
 export default function BlogView() {
-  const [blogData, setBlogData] = React.useState(null);
+  const [blogData, setBlogData] = useState(null);
   const id = useParams().id;
 
   const isJson = (str) => {
@@ -35,10 +36,9 @@ export default function BlogView() {
         return false;
       }
     }
-    return false;
   };
 
-  React.useEffect(() => {
+  useEffect(() => {
     const getBlog = async () => {
       const docRef = doc(getFirestore(fi), "Blogs", id);
       const docSnap = await getDoc(docRef);
@@ -83,7 +83,7 @@ export default function BlogView() {
           <div role="status">
             <svg
               aria-hidden="true"
-              class="w-8 h-8 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600"
+              className="w-8 h-8 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600"
               viewBox="0 0 100 101"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -97,7 +97,7 @@ export default function BlogView() {
                 fill="currentFill"
               />
             </svg>
-            <span class="sr-only">Loading...</span>
+            <span className="sr-only">Loading...</span>
           </div>
         </div>
       ) : !blogData.title ? (
@@ -132,6 +132,7 @@ export default function BlogView() {
                 <a
                   target="_blank"
                   href={`https://www.facebook.com/sharer/sharer.php?u=${window.location.href}&title=${blogData.title}`}
+                  rel="noreferrer"
                 >
                   <ion-icon
                     name="logo-facebook"
@@ -141,6 +142,7 @@ export default function BlogView() {
                 <a
                   target="_blank"
                   href={`https://twitter.com/share?url=${window.location.href}&title=${blogData.title}&summary=`}
+                  rel="noreferrer"
                 >
                   <ion-icon
                     name="logo-twitter"
@@ -150,6 +152,7 @@ export default function BlogView() {
                 <a
                   target="_blank"
                   href={`https://www.linkedin.com/shareArticle?mini=true&url=${window.location.href}&title=${blogData.title}&summary=`}
+                  rel="noreferrer"
                 >
                   <ion-icon
                     name="logo-linkedin"
@@ -173,9 +176,9 @@ export default function BlogView() {
                 dangerouslySetInnerHTML={{
                   __html: isJson(blogData.body)
                     ? new edjsParser({
-                        youtube: `<iframe src="<%data.embed%>" width="<%data.width%>"><%data.caption%></iframe>`,
-                        list: `<ul><%data.items.map(item => { return '<li>' + item + '</li>' }).join('')}</ul>`,
-                      }).parse(isJson(blogData.body))
+                      youtube: `<iframe src="<%data.embed%>" width="<%data.width%>"><%data.caption%></iframe>`,
+                      list: `<ul><%data.items.map(item => { return '<li>' + item + '</li>' }).join('')}</ul>`,
+                    }).parse(isJson(blogData.body))
                     : "",
                 }}
               ></div>

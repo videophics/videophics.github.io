@@ -1,25 +1,24 @@
-import React from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
 /* Components */
-import WithAuth from "./components/WithAuth";
+import WithAuth from "../../components/admin/WithAuth";
 
 /* Utils */
 import { getSitemap, postSitemap } from "../../utils/sitemap";
 
 function Sitemap() {
-  const [data, setData] = React.useState(null);
-  const [addnewsitemapInput1, setAddnewsitemapInput1] = React.useState(
+  const [data, setData] = useState(null);
+  const [addnewsitemapInput1, setAddnewsitemapInput1] = useState(
     "https://videophics.com/?/"
   );
-  const [addnewsitemapInput2, setAddnewsitemapInput2] = React.useState(
+  const [addnewsitemapInput2, setAddnewsitemapInput2] = useState(
     new Date().toISOString().split("T")[0]
   );
-  const [addnewsitemapInput3, setAddnewsitemapInput3] =
-    React.useState("Select");
+  const [addnewsitemapInput3, setAddnewsitemapInput3] = useState("Select");
 
-  React.useEffect(() => {
+  useEffect(() => {
     getSitemap((result) => {
       setData(result);
     });

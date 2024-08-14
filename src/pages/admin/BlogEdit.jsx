@@ -1,4 +1,4 @@
-import React from "react";
+import { useEffect, useState, useRef } from "react";
 import { Helmet } from "react-helmet";
 import { useParams, Link } from "react-router-dom";
 import { doc, getDoc, getFirestore, deleteDoc } from "@firebase/firestore";
@@ -24,7 +24,7 @@ import edjsParser from "editorjs-parser";
 import { StyleInlineTool } from "editorjs-style";
 
 /* Components */
-import WithAuth from "./components/WithAuth";
+import WithAuth from "../../components/admin/WithAuth";
 
 /* Utils */
 import {
@@ -35,15 +35,15 @@ import {
 import fi from "../../utils/firebase";
 
 function BlogEdit() {
-  const ejInstance = React.useRef(null);
+  const ejInstance = useRef(null);
   const { postId } = useParams();
-  const [thePost, setThePost] = React.useState(null);
+  const [thePost, setThePost] = useState(null);
 
-  const [blogBody, setBlogBody] = React.useState({});
-  const [title, setTitle] = React.useState("");
-  const [category, setCategory] = React.useState("Branding");
-  const [author, setAuthor] = React.useState("Author");
-  const [thumbnail, setThumbnail] = React.useState(null);
+  const [blogBody, setBlogBody] = useState({});
+  const [title, setTitle] = useState("");
+  const [category, setCategory] = useState("Branding");
+  const [author, setAuthor] = useState("Author");
+  const [thumbnail, setThumbnail] = useState(null);
 
   const DEFAULT_INITIAL_DATA = {
     time: new Date().getTime(),
@@ -354,9 +354,8 @@ function BlogEdit() {
     uploadBlogImage(
       file,
       (snapshot) => {
-        const urlofImage = `https://firebasestorage.googleapis.com/v0/b/${
-          snapshot.ref.bucket
-        }/o/${encodeURIComponent(snapshot.ref.fullPath)}?alt=media`;
+        const urlofImage = `https://firebasestorage.googleapis.com/v0/b/${snapshot.ref.bucket
+          }/o/${encodeURIComponent(snapshot.ref.fullPath)}?alt=media`;
 
         createBlogPost(
           { ...thePost, thumbnail: urlofImage },
@@ -376,7 +375,7 @@ function BlogEdit() {
     );
   };
 
-  React.useEffect(() => {
+  useEffect(() => {
     getDoc(doc(getFirestore(fi), "Blogs", postId)).then((doc) => {
       if (doc.exists()) {
         setThePost(doc.data());
@@ -600,7 +599,7 @@ function BlogEdit() {
                   {thumbnail && (
                     <button
                       className="mb-5 bg-red-500 dark:bg-red-600 dark:hover:bg-red-700 hover:bg-red-600 text-white font-[500] text-sm py-2 px-4 rounded flex items-center gap-1"
-                      onClick={(e) => {
+                      onClick={() => {
                         if (
                           window.confirm(
                             "Are you sure you want to delete the thumbnail?"
