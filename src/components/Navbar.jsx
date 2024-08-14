@@ -385,7 +385,7 @@ export default function Navbar({ theme, setTheme }) {
           <div className="flex gap-5 md:gap-4 justify-end items-center">
             <NavLink
               to="/contact-us"
-              className="bg-violet-700 text-white text-sm px-6 py-3 rounded-full from-violet-500 to-violet-700 bg-gradient-to-l hover:from-violet-600 hover:to-violet-800 active:scale-95 hidden md:block"
+              className="bg-violet-700 text-white text-sm px-6 py-3 rounded-md from-violet-500 to-violet-700 bg-gradient-to-l hover:from-violet-600 hover:to-violet-800 active:scale-95 hidden md:block"
             >
               Contact Us
             </NavLink>

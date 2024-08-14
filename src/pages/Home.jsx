@@ -12,10 +12,10 @@ import { useState } from "react";
 export default function Home() {
   const [isMuted, setMuted] = useState(true);
 
-  const HGFRJh = () => (<div className="mt-3 flex gap-3 flex-col items-center sm:flex-row">
+  const HGFRJh = () => (<div className="mt-3 flex gap-4 flex-col items-center sm:flex-row">
     <NavLink to="/about-us">
       <button
-        className="px-7 text-md md:text-[16px] md:px-8 py-3 text-white rounded-full from-violet-400 to-violet-600 bg-gradient-to-l hover:from-violet-500 hover:to-violet-700 active:scale-95 flex gap-1 items-center justify-center w-fit min-w-[200px]"
+        className="px-7 text-md md:text-[16px] md:px-8 py-3 text-white rounded-md from-violet-400 to-violet-600 bg-gradient-to-l hover:from-violet-500 hover:to-violet-700 active:scale-95 flex gap-1 items-center justify-center w-fit min-w-[200px]"
         title="Click here to learn more"
       >
         Learn more <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
@@ -26,7 +26,7 @@ export default function Home() {
     </NavLink>
     <NavLink to="/services/">
       <button
-        className="px-7 text-sm md:text-[16px] md:px-8 py-3 dark:text-white rounded-full bg-transparent border border-violet-500 active:scale-95 hover:bg-violet-500/20 hover:border-violet-100 w-fit"
+        className="px-7 text-sm md:text-[16px] md:px-8 py-3.5 dark:text-white rounded-md bg-transparent border border-violet-500 active:scale-95 hover:bg-violet-500/20 hover:border-violet-100 w-fit"
         title="Click here to compare our plans"
       >
         Visit our services &rarr;
@@ -51,14 +51,7 @@ export default function Home() {
           async
         ></script>
       </Helmet>
-      <div className="hidden md:block absolute right-0 top-0 h-[400px] opacity-80 dark:opacity-1 w-[500px] bg-gradient-to-r from-slate-100 to-slate-50 dark:from-slate-800 dark:to-slate-900 rounded-l-full z-5" />
-      <div className="hidden md:block absolute right-0 top-[300px] h-[200px] w-[200px] bg-gradient-to-r from-purple-200 to-purple-50 dark:from-slate-800 dark:to-slate-900 rounded-full z-5" />
       <section className="_hero-section relative py-10 lg:min-h-[calc(100vh-80px)] flex justify-center">
-
-        <div className="_sketch h-[100px] w-[200px] dark:h-[200px] dark:w-[300px] absolute from-violet-700 dark:from-violet-300 to-violet-100 bg-gradient-to-r blur-3xl filter top-20 dark:top-[10px] left-0 dark:left-[-40px] dark:opacity-70" />
-        <div className="_sketch h-[200px] w-[300px] absolute from-violet-300 to-violet-100 bg-gradient-to-r blur-3xl filter right-0 md:left-[40%] bottom-10 dark:hidden animate-[bounce_3s_infinite]" />
-        <div className="_sketch h-[100px] w-[300px] absolute from-violet-300 to-violet-100 bg-gradient-to-r blur-3xl filter top-0 right-0 hidden md:block dark:bottom-20 dark:top-auto dark:opacity-50 animate-[bounce_3s_infinite]" />
-
         <div className="container mx-auto max-w-[1300px] flex flex-col sm:gap-10 lg:items-center">
           <div className="flex flex-col justify-center md:items-center md:text-center z-10 max-w-[620px] lg:max-w-[730px] mx-auto lg:mx-0 md:py-10">
             <h1
