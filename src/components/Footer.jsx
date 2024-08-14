@@ -14,7 +14,7 @@ function Footer() {
             clients, including companies, organizations, publications, and
             personal promotions.
           </p>
-          <button className="text-slate-800 dark:text-white bg-white dark:bg-violet-700 dark:bg-violet-700 dark:text-white rounded-full px-6 py-3 mt-6 text-sm flex gap-2">
+          <button className="text-gray-800 dark:text-white bg-white dark:bg-blue-700 dark:bg-blue-700 dark:text-white rounded-full px-6 py-3 mt-6 text-sm flex gap-2">
             Company Deck
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -94,7 +94,7 @@ function Footer() {
         <div className="min-w-[10px]"></div>
       </div>
       <div className="container mx-auto max-w-[1300px] gap-4 flex flex-col items-center sm:flex-row sm:justify-between border-t border-[rgba(255,255,255,0.1)] dark:border-gray-700 pt-6">
-        <p className="text-md dark:text-slate-400">
+        <p className="text-md dark:text-gray-400">
           © 2024 Videophics, All Rights Reserved.
         </p>
         <div className="flex space-x-5">

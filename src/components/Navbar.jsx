@@ -10,8 +10,8 @@ export default function Navbar({ theme, setTheme }) {
         <li
           className={
             !mobile
-              ? "border-b-[2px] border-transparent hover:border-violet-700 dark:hover:border-violet-500"
-              : "border-b-[2px] border-transparent dark:hover:border-violet-500"
+              ? "border-b-[2px] border-transparent hover:border-blue-700 dark:hover:border-blue-500"
+              : "border-b-[2px] border-transparent dark:hover:border-blue-500"
           }
           index="1"
         >
@@ -21,7 +21,7 @@ export default function Navbar({ theme, setTheme }) {
       </Link>
       <Link className="w-fit" to="/services/development">
         <li
-          className="border-b-[2px] border-transparent hover:border-violet-700 dark:hover:border-violet-500"
+          className="border-b-[2px] border-transparent hover:border-blue-700 dark:hover:border-blue-500"
           index="3"
         >
           <p className={mobile && "hidden"}>Development</p>
@@ -30,7 +30,7 @@ export default function Navbar({ theme, setTheme }) {
       </Link>
       <Link className="w-fit" to="/services/brand-advisory">
         <li
-          className="border-b-[2px] border-transparent hover:border-violet-700 dark:hover:border-violet-500"
+          className="border-b-[2px] border-transparent hover:border-blue-700 dark:hover:border-blue-500"
           index="2"
         >
           <p className={mobile && "hidden"}>Brand Advisory</p>
@@ -39,7 +39,7 @@ export default function Navbar({ theme, setTheme }) {
       </Link>
       <Link className="w-fit" to="/services/marketing">
         <li
-          className="border-b-[2px] border-transparent hover:border-violet-700 dark:hover:border-violet-500"
+          className="border-b-[2px] border-transparent hover:border-blue-700 dark:hover:border-blue-500"
           index="4"
         >
           <p className={mobile && "hidden"}>Marketing</p>
@@ -48,7 +48,7 @@ export default function Navbar({ theme, setTheme }) {
       </Link>
       <Link className="w-fit" to="/services/content-writing">
         <li
-          className="border-b-[2px] border-transparent hover:border-violet-700 dark:hover:border-violet-500"
+          className="border-b-[2px] border-transparent hover:border-blue-700 dark:hover:border-blue-500"
           index="5"
         >
           <p className={mobile && "hidden"}>Content Writing</p>
@@ -57,7 +57,7 @@ export default function Navbar({ theme, setTheme }) {
       </Link>
       <Link className="w-fit" to="/services/software-testing">
         <li
-          className="border-b-[2px] border-transparent hover:border-violet-700 dark:hover:border-violet-500"
+          className="border-b-[2px] border-transparent hover:border-blue-700 dark:hover:border-blue-500"
           index="6"
         >
           <p className={mobile && "hidden"}>Software Testing</p>
@@ -66,41 +66,6 @@ export default function Navbar({ theme, setTheme }) {
       </Link>
     </>
   );
-  const navActivated = () => {
-    document
-      .querySelector("._navbar")
-      .classList.add(
-        "border-[#cecece]",
-        "bg-violet-50/90",
-        "backdrop-blur-lg",
-        "dark:bg-slate-800/80",
-        "dark:border-slate-700"
-      );
-  };
-  const navDeactivated = () => {
-    document
-      .querySelector("._navbar")
-      .classList.remove(
-        "border-[#cecece]",
-        "bg-violet-50/90",
-        "backdrop-blur-lg",
-        "dark:bg-slate-800/80",
-        "dark:border-slate-700"
-      );
-  };
-  const navEffect = () => {
-    if (
-      document.getElementById("homepage")
-    ) {
-      if (window.scrollY > 50) {
-        navActivated();
-      } else {
-        navDeactivated();
-      }
-    } else {
-      navActivated();
-    }
-  };
   const Menu = () => (
     <>
       <li>
@@ -172,12 +137,12 @@ export default function Navbar({ theme, setTheme }) {
           </ol>
         </div>
         <div
-          className="_services-menu bg-white dark:bg-slate-800 absolute -translate-y-[100rem] transition-all duration-500 ease-in-out px-6 shadow-md opacity-0 hidden md:block w-auto whitespace-nowrap"
+          className="_services-menu bg-white dark:bg-gray-800 absolute -translate-y-[100rem] transition-all duration-500 ease-in-out px-6 shadow-md opacity-0 hidden md:block w-auto whitespace-nowrap"
           role="menu"
           style={{ zIndex: "10" }}
         >
           <ol
-            className="custom flex flex-col gap-3 text-lg font-[500] text-slate-700 dark:text-white py-[1.5rem] "
+            className="custom flex flex-col gap-3 text-lg font-[500] text-gray-700 dark:text-white py-[1.5rem] "
             onClick={hideServiceMenu}
           >
             <ServicesList />
@@ -241,8 +206,6 @@ export default function Navbar({ theme, setTheme }) {
         });
       });
     });
-    navEffect();
-    window.addEventListener("scroll", navEffect);
     if (!document.getElementById("homepage")) {
       document.querySelector("._ad").style.display = "none";
     } else {
@@ -278,8 +241,8 @@ export default function Navbar({ theme, setTheme }) {
 
   return (
     <>
-      <div className="_ad w-full relative bg-violet-100 dark:bg-gradient-to-r dark:from-[#410AC2] dark:to-violet-600 z-20 py-3">
-        <div className="container mx-auto max-w-[1300px] text-slate-700 dark:text-white flex flex-col sm:flex-row justify-center sm:items-center gap-2 sm:gap-6 text-sm md:text-md lg:text-2md flex-wrap">
+      <div className="_ad w-full relative bg-blue-100 dark:bg-gradient-to-r dark:from-[#410AC2] dark:to-blue-600 z-20 py-3">
+        <div className="container mx-auto max-w-[1300px] text-gray-700 dark:text-white flex flex-col sm:flex-row justify-center sm:items-center gap-2 sm:gap-6 text-sm md:text-md lg:text-2md flex-wrap">
           <div className="md:ml-auto flex flex-wrap gap-1 md:gap-3">
             <p className="font-[600]">Black Friday Sale!</p>
             <p>Up to 20% off in all packages!</p>
@@ -360,13 +323,13 @@ export default function Navbar({ theme, setTheme }) {
         </div>
       </div>
       <nav
-        className="_navbar sticky top-0 left-0 z-50 py-4 lg:p-0 bg-white/1 text-black dark:text-white border-b border-transparent"
+        className="_navbar sticky top-0 left-0 z-50 py-4 lg:p-0 text-black dark:text-white border-b border-[#cecece] bg-blue-50/90 backdrop-blur-lg dark:bg-gray-800/80 dark:border-gray-700"
         role="navigation"
       >
         <div className="container mx-auto flex justify-between lg:grid grid-cols-3 gap-4">
           <div className="_logo flex items-center">
             <NavLink to="/">
-              <h1 className="font-medium text-lg flex items-center">
+              <h1 className="font-bold text-lg flex items-center">
                 <img
                   src="/logo.jpg"
                   alt="Videophics"
@@ -385,12 +348,12 @@ export default function Navbar({ theme, setTheme }) {
           <div className="flex gap-5 md:gap-4 justify-end items-center">
             <NavLink
               to="/contact-us"
-              className="bg-violet-700 text-white text-sm px-6 py-3 rounded-md from-violet-500 to-violet-700 bg-gradient-to-l hover:from-violet-600 hover:to-violet-800 active:scale-95 hidden md:block"
+              className="bg-blue-700 text-white text-sm px-6 py-3 rounded-md from-blue-500 to-blue-700 bg-gradient-to-l hover:from-blue-600 hover:to-blue-800 active:scale-95 hidden md:block"
             >
               Contact Us
             </NavLink>
             <button
-              className="text-black p-2 rounded-full active:scale-95 active:bg-gray-100 dark:text-white dark:active:bg-slate-700 dark:active:text-white"
+              className="text-black p-2 rounded-full active:scale-95 active:bg-gray-100 dark:text-white dark:active:bg-gray-700 dark:active:text-white"
               onClick={() => {
                 setTheme(theme === "dark" ? "light" : "dark");
               }}
@@ -428,7 +391,7 @@ export default function Navbar({ theme, setTheme }) {
               )}
             </button>
             <button
-              className="text-black p-2 rounded-full active:scale-95 active:bg-gray-100 block lg:hidden dark:text-white dark:active:bg-slate-800 dark:active:text-white"
+              className="text-black p-2 rounded-full active:scale-95 active:bg-gray-100 block lg:hidden dark:text-white dark:active:bg-gray-800 dark:active:text-white"
               onClick={() => {
                 document
                   .querySelector("._drawer-menu-layer")
@@ -463,12 +426,12 @@ export default function Navbar({ theme, setTheme }) {
         </div>
       </nav>
       <div
-        className="_drawer-menu max-w-[380px] w-[70%] bg-white dark:bg-slate-800 dark:text-white fixed top-0 right-0 h-full transform translate-x-full -translate-y-[100rem] transition-all duration-500 ease-in-out p-6 shadow text-xl rounded-lg"
+        className="_drawer-menu max-w-[380px] w-[70%] bg-white dark:bg-gray-800 dark:text-white fixed top-0 right-0 h-full transform translate-x-full -translate-y-[100rem] transition-all duration-500 ease-in-out p-6 shadow text-xl rounded-lg"
         role="menu"
         style={{ zIndex: "60" }}
       >
         <div className="brand mb-10">
-          <h1 className="font-medium text-lg flex items-center">
+          <h1 className="font-bold text-lg flex items-center">
             <img
               src="/logo.jpg"
               alt="Videophics"

@@ -41,23 +41,23 @@ function Blog() {
             <Link to="/admin">
               <button className="mb-5">&larr; Go back</button>
             </Link>
-            <h1 className="text-3xl md:text-4xl font-[500] text-center text-slate-800 dark:text-white">
-              <span className="text-slate-500 dark:text-gray-500">Admin /</span>{" "}
+            <h1 className="text-3xl md:text-4xl font-[500] text-center text-gray-800 dark:text-white">
+              <span className="text-gray-500 dark:text-gray-500">Admin /</span>{" "}
               Blog
             </h1>
             <div className="pt-8 mt-7">
-              <div className="mt-2 bg-white dark:bg-slate-800 shadow-md rounded-md p-8">
-                <p className="text-slate-700 dark:text-white text-lg font-[600]">
+              <div className="mt-2 bg-white dark:bg-gray-800 shadow-md rounded-md p-8">
+                <p className="text-gray-700 dark:text-white text-lg font-[600]">
                   My Blog
                 </p>
-                <div className="border-t border-slate-200 dark:border-slate-700 mt-4"></div>
+                <div className="border-t border-gray-200 dark:border-gray-700 mt-4"></div>
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 mt-7 min-h-[300px]">
-                  <div className="rounded-md p-4 border border-slate-200 dark:border-slate-700">
-                    <p className="mb-3 text-slate-700 dark:text-gray-400 text-[13px] uppercase font-[500]">
+                  <div className="rounded-md p-4 border border-gray-200 dark:border-gray-700">
+                    <p className="mb-3 text-gray-700 dark:text-gray-400 text-[13px] uppercase font-[500]">
                       Actions
                     </p>
                     <Link to="/admin/blog/add">
-                      <button className="bg-violet-600 hover:bg-violet-700 text-white font-[500] text-sm py-2 px-4 rounded">
+                      <button className="bg-blue-600 hover:bg-blue-700 text-white font-[500] text-sm py-2 px-4 rounded">
                         Add Post
                       </button>
                     </Link>
@@ -70,10 +70,10 @@ function Blog() {
                       <div className="flex gap-2">
                         <Link to={"/blog/" + blog.id} target="_blank">
                           <div className="hover:opacity-50 transition duration-300">
-                            <h2 className="text-slate-800 dark:text-white text-lg font-[400] leading-6 line-clamp-2">
+                            <h2 className="text-gray-800 dark:text-white text-lg font-[400] leading-6 line-clamp-2">
                               {blog.title}
                             </h2>
-                            <p className="text-slate-500 dark:text-slate-400 text-sm mt-1">
+                            <p className="text-gray-500 dark:text-gray-400 text-sm mt-1">
                               {blog.author} |{" "}
                               {blog.publishedAt.toDate().toDateString()}
                             </p>
@@ -81,7 +81,7 @@ function Blog() {
                         </Link>
                         <div className="ml-auto">
                           <Link to={"/admin/blog/edit/" + blog.id}>
-                            <button className="bg-violet-600 hover:bg-violet-700 text-white font-[500] text-sm py-2 px-2 rounded">
+                            <button className="bg-blue-600 hover:bg-blue-700 text-white font-[500] text-sm py-2 px-2 rounded">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="none"
@@ -109,7 +109,7 @@ function Blog() {
                         <img
                           src={blog.thumbnail}
                           alt={blog.title}
-                          className="w-full h-[200px] object-cover mt-5 rounded-md hover:opacity-50 transition duration-300 border bg-slate-100 dark:bg-slate-700"
+                          className="w-full h-[200px] object-cover mt-5 rounded-md hover:opacity-50 transition duration-300 border bg-gray-100 dark:bg-gray-700"
                         />
                       </a>
                     </div>

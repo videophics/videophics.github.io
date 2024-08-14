@@ -12,7 +12,7 @@ export default {
       colors: {
         body: {
           DEFAULT: "rgb(245, 243, 255)",
-          dark: "rgb(15, 23, 42)",
+          dark: "rgb(28, 31, 37)",
         },
       },
       lineHeight: {

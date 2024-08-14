@@ -33,12 +33,12 @@ export default function App() {
       localStorage.setItem("theme", "dark");
       document.documentElement.style.setProperty(
         "--bg-secondary-1",
-        "rgb(167 139 250)"
+        "#6a8ddd"
       );
     } else {
       document.documentElement.classList.remove("dark");
       localStorage.setItem("theme", "light");
-      document.documentElement.style.setProperty("--bg-secondary-1", "#5c42bd");
+      document.documentElement.style.setProperty("--bg-secondary-1", "#4266bd");
     }
     return () => { };
   }, [theme]);

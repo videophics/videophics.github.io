@@ -65,7 +65,7 @@ function WithAuth({ children }) {
       </Helmet>
       {user === null ? (
         <div className="container py-12 mx-auto">
-          <div className="text-center text-slate-800 dark:text-white text-3xl font-[500] mt-10 flex flex-col items-center">
+          <div className="text-center text-gray-800 dark:text-white text-3xl font-[500] mt-10 flex flex-col items-center">
             <div role="status">
               <svg
                 aria-hidden="true"
@@ -86,7 +86,7 @@ function WithAuth({ children }) {
               <span className="sr-only">Loading...</span>
             </div>
 
-            <p className="text-base text-slate-600 dark:text-slate-400 font-[400] mt-6">
+            <p className="text-base text-gray-600 dark:text-gray-400 font-[400] mt-6">
               Refresh or clear the site data if it takes too long and try again.
             </p>
           </div>
@@ -95,10 +95,10 @@ function WithAuth({ children }) {
         children({ user })
       ) : (
         <div className="container py-12 mx-auto max-w-[1300px]">
-          <h1 className="text-center text-slate-800 dark:text-white text-3xl font-[500] mt-10">
+          <h1 className="text-center text-gray-800 dark:text-white text-3xl font-[500] mt-10">
             Welcome to Admin Panel
           </h1>
-          <div className="_admin-account w-full max-w-[450px] mx-auto mt-8 text-slate-800 dark:text-white text-center">
+          <div className="_admin-account w-full max-w-[450px] mx-auto mt-8 text-gray-800 dark:text-white text-center">
             <button
               className="flex items-center justify-center bg-blue-500 hover:bg-blue-700 text-white font-[500] py-2 px-4 rounded mx-auto"
               onClick={loginProcess}
