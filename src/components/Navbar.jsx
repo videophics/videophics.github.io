@@ -1,4 +1,4 @@
-import React from "react";
+import { useEffect } from "react";
 import { NavLink, Link } from "react-router-dom";
 
 export default function Navbar({ theme, setTheme }) {
@@ -211,7 +211,7 @@ export default function Navbar({ theme, setTheme }) {
       .classList.add("-translate-y-[100rem]");
   };
 
-  React.useEffect(() => {
+  useEffect(() => {
     window.onscroll = function () {
       if (document.querySelector(".bottom-to-top")) {
         if (
@@ -226,7 +226,7 @@ export default function Navbar({ theme, setTheme }) {
     };
   }, []);
 
-  React.useEffect(() => {
+  useEffect(() => {
     const servicesMenuList = document.querySelectorAll("._services-menu ol li");
     servicesMenuList.forEach((li) => {
       li.addEventListener("mouseenter", () => {
@@ -265,7 +265,7 @@ export default function Navbar({ theme, setTheme }) {
     document.getElementById("offerSeconds").textContent = s + "s";
   };
 
-  React.useEffect(() => {
+  useEffect(() => {
     const i = setInterval(() => {
       initOffer();
     }, 1000);

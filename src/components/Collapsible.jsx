@@ -1,12 +1,11 @@
-import React from "react";
-import PropTypes from "prop-types";
+import { useRef, useState } from "react";
 
 const Collapsible = ({ title, children }) => {
-  const [isExpanded, setIsExpanded] = React.useState(false);
+  const [isExpanded, setIsExpanded] = useState(false);
 
-  const ref = React.useRef();
+  const ref = useRef();
 
-  const [height, setHeight] = React.useState();
+  const [height, setHeight] = useState();
 
   const handleToggle = (e) => {
     e.preventDefault();
@@ -34,10 +33,6 @@ const Collapsible = ({ title, children }) => {
       </div>
     </div>
   );
-};
-
-Collapsible.propTypes = {
-  title: PropTypes.string,
 };
 
 export default Collapsible;

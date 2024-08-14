@@ -1,4 +1,3 @@
-import Animated from "./Animated";
 
 export default function Clients() {
   return (
@@ -13,7 +12,6 @@ export default function Clients() {
               </h3>
             </div>
             <div>
-              <Animated varient="fade-left">
                 <div className="_clients justify-center flex gap-4 lg:gap-6 mt-2 flex-wrap">
                   <div className="w-16 h-16">
                     <img
@@ -44,7 +42,6 @@ export default function Clients() {
                     />
                   </div>
                 </div>
-              </Animated>
             </div>
           </div>
     </>

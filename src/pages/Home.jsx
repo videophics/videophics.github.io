@@ -4,7 +4,6 @@ import { NavLink } from "react-router-dom";
 /* Components */
 import Collapsible from "../components/Collapsible";
 import Contact from "../components/Contact";
-import Animated from "../components/Animated";
 import Booking from "../components/Booking";
 import Services from '../components/Services';
 import Clients from '../components/Clients';
@@ -61,39 +60,30 @@ export default function Home() {
         <div className="_sketch h-[100px] w-[300px] absolute from-violet-300 to-violet-100 bg-gradient-to-r blur-3xl filter top-0 right-0 hidden md:block dark:bottom-20 dark:top-auto dark:opacity-50 animate-[bounce_3s_infinite]" />
 
         <div className="container mx-auto max-w-[1300px] flex flex-col sm:gap-10 lg:items-center">
-          <Animated varient="fade-up" speed="fast">
-            <div className="flex flex-col justify-center md:items-center md:text-center z-10 max-w-[620px] lg:max-w-[730px] mx-auto lg:mx-0 md:py-10">
-              <h1
-                className="text-2xl sm:text-4xl lg:text-[2.6rem] xl:text-[3rem] font-bold mb-4 text-slate-700 dark:text-white sm:leading-10 lg:leading-13"
-                style={{
-                  letterSpacing: "-0.03em",
-                }}
-              >
-                <Animated varient="fade-left" className="inline">
-                  Branding is all about
-                </Animated>{" "}
-                <Animated varient="fade-right" className="inline">
-                  <span className="text-violet-500 dark:text-violet-400">
-                    storytelling
-                  </span>. We{" "}
-                  <Animated varient="fade-right" className="inline">
-                    <span className="text-violet-500 dark:text-violet-400">
-                      visualize
-                    </span>
-                  </Animated>{" "}
-                  your touchy stories
-                </Animated>
-              </h1>
-              <p className="text-[14px] md:text-[17px] mt-4 mb-7 xl:px-12 text-slate-500 dark:text-slate-400 leading-6 md:leading-7 _heroPara">
-                We bring brands and people closer. With a focus on
-                emotion-driven connections, we craft experiences that resonate
-                and endure.
-              </p>
-              <div className="hidden sm:block">
-                <HGFRJh />
-              </div>
+          <div className="flex flex-col justify-center md:items-center md:text-center z-10 max-w-[620px] lg:max-w-[730px] mx-auto lg:mx-0 md:py-10">
+            <h1
+              className="text-2xl sm:text-4xl lg:text-[2.6rem] xl:text-[3rem] font-bold mb-4 text-slate-700 dark:text-white sm:leading-10 lg:leading-13"
+              style={{
+                letterSpacing: "-0.03em",
+              }}
+            >
+              Branding is all about{" "}
+              <span className="text-violet-500 dark:text-violet-400">
+                storytelling
+              </span>. We{" "}<span className="text-violet-500 dark:text-violet-400">
+                visualize
+              </span>{" "}
+              your touchy stories
+            </h1>
+            <p className="text-[14px] md:text-[17px] mt-4 mb-7 xl:px-12 text-slate-500 dark:text-slate-400 leading-6 md:leading-7 _heroPara">
+              We bring brands and people closer. With a focus on
+              emotion-driven connections, we craft experiences that resonate
+              and endure.
+            </p>
+            <div className="hidden sm:block">
+              <HGFRJh />
             </div>
-          </Animated>
+          </div>
 
           <div className="z-10 w-full">
             <div className="bg-violet-100 dark:bg-slate-700 rounded-lg relative md:max-w-[75%] mx-auto">
@@ -168,54 +158,48 @@ export default function Home() {
                 What makes us different from others in the industry.
               </p>
               <div className="grid md:grid-cols-3 gap-12">
-                <Animated varient="fade-up">
-                  <div className="flex flex-col bg-slate-200 dark:bg-slate-800 p-6 rounded-lg h-full">
-                    <img
-                      src="/images/static/organic.png"
-                      alt="Quality"
-                      className="w-16 h-16 mb-4"
-                    />
-                    <h4 className="text-xl font-[600] mb-2 text-slate-700 dark:text-white leading-8">
-                      Organic Reach
-                    </h4>
-                    <p className="text-sm text-slate-500 dark:text-slate-400 leading-6">
-                      We help you reach your audience organically without any
-                      paid ads.
-                    </p>
-                  </div>
-                </Animated>
-                <Animated varient="fade-up">
-                  <div className="flex flex-col bg-slate-200 dark:bg-slate-800 p-6 rounded-lg h-full">
-                    <img
-                      src="/images/static/emotion.png"
-                      alt="Emotion"
-                      className="w-16 h-16 mb-4"
-                    />
-                    <h4 className="text-xl font-[600] mb-2 text-slate-700 dark:text-white leading-8">
-                      Emotional Connection
-                    </h4>
-                    <p className="text-sm text-slate-500 dark:text-slate-400 leading-6">
-                      We help you building emotional connection between brand
-                      and customer.
-                    </p>
-                  </div>
-                </Animated>
-                <Animated varient="fade-up">
-                  <div className="flex flex-col bg-slate-200 dark:bg-slate-800 p-6 rounded-lg h-full">
-                    <img
-                      src="/images/static/story.png"
-                      alt="Story"
-                      className="w-16 h-16 mb-4"
-                    />
-                    <h4 className="text-xl font-[600] mb-2 text-slate-700 dark:text-white leading-8">
-                      Story Telling
-                    </h4>
-                    <p className="text-sm text-slate-500 dark:text-slate-400 leading-6">
-                      We help you finding the real connecting story of your
-                      brand.
-                    </p>
-                  </div>
-                </Animated>
+                <div className="flex flex-col bg-slate-200 dark:bg-slate-800 p-6 rounded-lg h-full">
+                  <img
+                    src="/images/static/organic.png"
+                    alt="Quality"
+                    className="w-16 h-16 mb-4"
+                  />
+                  <h4 className="text-xl font-[600] mb-2 text-slate-700 dark:text-white leading-8">
+                    Organic Reach
+                  </h4>
+                  <p className="text-sm text-slate-500 dark:text-slate-400 leading-6">
+                    We help you reach your audience organically without any
+                    paid ads.
+                  </p>
+                </div>
+                <div className="flex flex-col bg-slate-200 dark:bg-slate-800 p-6 rounded-lg h-full">
+                  <img
+                    src="/images/static/emotion.png"
+                    alt="Emotion"
+                    className="w-16 h-16 mb-4"
+                  />
+                  <h4 className="text-xl font-[600] mb-2 text-slate-700 dark:text-white leading-8">
+                    Emotional Connection
+                  </h4>
+                  <p className="text-sm text-slate-500 dark:text-slate-400 leading-6">
+                    We help you building emotional connection between brand
+                    and customer.
+                  </p>
+                </div>
+                <div className="flex flex-col bg-slate-200 dark:bg-slate-800 p-6 rounded-lg h-full">
+                  <img
+                    src="/images/static/story.png"
+                    alt="Story"
+                    className="w-16 h-16 mb-4"
+                  />
+                  <h4 className="text-xl font-[600] mb-2 text-slate-700 dark:text-white leading-8">
+                    Story Telling
+                  </h4>
+                  <p className="text-sm text-slate-500 dark:text-slate-400 leading-6">
+                    We help you finding the real connecting story of your
+                    brand.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -232,81 +216,71 @@ export default function Home() {
             </h3>
           </div>
           <div className="_persons grid sm:grid-cols-2 md:grid-cols-3 gap-9 pt-[4rem]">
-            <Animated varient="fade-in">
-              <div className="flex flex-col items-center">
-                <img
-                  src="/images/static/persons/saadalamin.jpg"
-                  className="w-full max-w-[300px] bg-violet-300 rounded-md object-cover"
-                  style={{ aspectRatio: "3/3" }}
-                />
-                <h4 className="text-xl font-[600] mt-4 text-slate-700 dark:text-white leading-8">
-                  Saad Al Amin
-                </h4>
-                <p className="text-sm text-slate-500 dark:text-slate-400 leading-6">
-                  CEO & Founder
-                </p>
-              </div>
-            </Animated>
-            <Animated varient="fade-in">
-              <div className="flex flex-col items-center">
-                <img
-                  src=""
-                  className="w-full max-w-[300px] bg-violet-300 rounded-md object-cover"
-                  style={{ aspectRatio: "3/3" }}
-                />
-                <h4 className="text-xl font-[600] mt-4 text-slate-700 dark:text-white leading-8">
-                  Unknown
-                </h4>
-                <p className="text-sm text-slate-500 dark:text-slate-400 leading-6">
-                  Unknown
-                </p>
-              </div>
-            </Animated>
-            <Animated varient="fade-in">
-              <div className="flex flex-col items-center">
-                <img
-                  src="/images/static/persons/nishat.jpg"
-                  className="w-full max-w-[300px] bg-violet-300 rounded-md object-cover"
-                  style={{ aspectRatio: "3/3" }}
-                />
-                <h4 className="text-xl font-[600] mt-4 text-slate-700 dark:text-white leading-8">
-                  Zadid Al Lisan
-                </h4>
-                <p className="text-sm text-slate-500 dark:text-slate-400 leading-6">
-                  CTO
-                </p>
-              </div>
-            </Animated>
-            <Animated varient="fade-in">
-              <div className="flex flex-col items-center">
-                <img
-                  src=""
-                  className="w-full max-w-[300px] bg-violet-300 rounded-md object-cover"
-                  style={{ aspectRatio: "3/3" }}
-                />
-                <h4 className="text-xl font-[600] mt-4 text-slate-700 dark:text-white leading-8">
-                  Unknown
-                </h4>
-                <p className="text-sm text-slate-500 dark:text-slate-400 leading-6">
-                  Unknown
-                </p>
-              </div>
-            </Animated>
-            <Animated varient="fade-in">
-              <div className="flex flex-col items-center">
-                <img
-                  src="/images/static/persons/mohammadsefatullah.jpg"
-                  className="w-full max-w-[300px] bg-violet-300 rounded-md object-cover"
-                  style={{ aspectRatio: "3/3" }}
-                />
-                <h4 className="text-xl font-[600] mt-4 text-slate-700 dark:text-white leading-8">
-                  Mohammad Sefatullah
-                </h4>
-                <p className="text-sm text-slate-500 dark:text-slate-400 leading-6">
-                  Web Developer
-                </p>
-              </div>
-            </Animated>
+            <div className="flex flex-col items-center">
+              <img
+                src="/images/static/persons/saadalamin.jpg"
+                className="w-full max-w-[300px] bg-violet-300 rounded-md object-cover"
+                style={{ aspectRatio: "3/3" }}
+              />
+              <h4 className="text-xl font-[600] mt-4 text-slate-700 dark:text-white leading-8">
+                Saad Al Amin
+              </h4>
+              <p className="text-sm text-slate-500 dark:text-slate-400 leading-6">
+                CEO & Founder
+              </p>
+            </div>
+            <div className="flex flex-col items-center">
+              <img
+                src=""
+                className="w-full max-w-[300px] bg-violet-300 rounded-md object-cover"
+                style={{ aspectRatio: "3/3" }}
+              />
+              <h4 className="text-xl font-[600] mt-4 text-slate-700 dark:text-white leading-8">
+                Unknown
+              </h4>
+              <p className="text-sm text-slate-500 dark:text-slate-400 leading-6">
+                Unknown
+              </p>
+            </div>
+            <div className="flex flex-col items-center">
+              <img
+                src="/images/static/persons/nishat.jpg"
+                className="w-full max-w-[300px] bg-violet-300 rounded-md object-cover"
+                style={{ aspectRatio: "3/3" }}
+              />
+              <h4 className="text-xl font-[600] mt-4 text-slate-700 dark:text-white leading-8">
+                Zadid Al Lisan
+              </h4>
+              <p className="text-sm text-slate-500 dark:text-slate-400 leading-6">
+                CTO
+              </p>
+            </div>
+            <div className="flex flex-col items-center">
+              <img
+                src=""
+                className="w-full max-w-[300px] bg-violet-300 rounded-md object-cover"
+                style={{ aspectRatio: "3/3" }}
+              />
+              <h4 className="text-xl font-[600] mt-4 text-slate-700 dark:text-white leading-8">
+                Unknown
+              </h4>
+              <p className="text-sm text-slate-500 dark:text-slate-400 leading-6">
+                Unknown
+              </p>
+            </div>
+            <div className="flex flex-col items-center">
+              <img
+                src="/images/static/persons/mohammadsefatullah.jpg"
+                className="w-full max-w-[300px] bg-violet-300 rounded-md object-cover"
+                style={{ aspectRatio: "3/3" }}
+              />
+              <h4 className="text-xl font-[600] mt-4 text-slate-700 dark:text-white leading-8">
+                Mohammad Sefatullah
+              </h4>
+              <p className="text-sm text-slate-500 dark:text-slate-400 leading-6">
+                Web Developer
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -315,14 +289,12 @@ export default function Home() {
           <Clients />
         </section>
         <div className="container mx-auto max-w-[1300px]">
-          <Animated varient="fade-left">
-            <section
-              id="booking"
-              className="_booking-section py-12 md:py-[6.5rem] bg-violet-500 dark:bg-slate-900 flex flex-col justify-center items-center rounded-lg"
-            >
-              <Booking />
-            </section>
-          </Animated>
+          <section
+            id="booking"
+            className="_booking-section py-12 md:py-[6.5rem] bg-violet-500 dark:bg-slate-900 flex flex-col justify-center items-center rounded-lg"
+          >
+            <Booking />
+          </section>
         </div>
         <section
           className="_faq-section py-[8rem] pb-[3rem] md:min-h-[calc(100vh-80px)] flex flex-col justify-center items-center"
@@ -344,53 +316,51 @@ export default function Home() {
                 .
               </p>
             </div>
-            <Animated varient="fade-up" speed="fast">
-              <div className="flex justify-center">
-                <div className="max-w-[500px] md:max-w-[700px] pt-[3rem]">
-                  <Collapsible title="What is your refund policy?">
-                    <p>
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Atque, veniam excepturi sequi eius libero dolorem impedit
-                      dolores natus cum, a nostrum illum minima! Doloremque
-                      architecto cum expedita dolorem porro culpa.
-                    </p>
-                  </Collapsible>
-                  <Collapsible title="How do I cancel my subscription?">
-                    <p>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Aut, neque tenetur repellat obcaecati illum autem officiis
-                      odit excepturi exercitationem repudiandae atque unde nemo,
-                      corporis ratione saepe vitae, eveniet nesciunt beatae.
-                    </p>
-                  </Collapsible>
-                  <Collapsible title="How do I cancel my subscription?">
-                    <p>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Eum vitae neque quidem, in architecto a nam, atque
-                      doloribus eos sequi molestias cumque quo dignissimos
-                      culpa, omnis maiores repudiandae amet dolorum?
-                    </p>
-                  </Collapsible>
-                  <Collapsible title="Can I upgrade my plan?">
-                    <p>
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Et libero cupiditate suscipit nisi ipsum quae distinctio
-                      quos architecto cum placeat eum quia, reprehenderit alias
-                      officia accusamus dolores recusandae dolore. Delectus.
-                    </p>
-                  </Collapsible>
-                  <Collapsible title="Can I upgrade my plan?">
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Voluptates qui fugit provident vitae unde obcaecati
-                      blanditiis error quo in consequatur aperiam, quis
-                      quibusdam ad quidem dolor explicabo dignissimos facilis
-                      odio!
-                    </p>
-                  </Collapsible>
-                </div>
+            <div className="flex justify-center">
+              <div className="max-w-[500px] md:max-w-[700px] pt-[3rem]">
+                <Collapsible title="What is your refund policy?">
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Atque, veniam excepturi sequi eius libero dolorem impedit
+                    dolores natus cum, a nostrum illum minima! Doloremque
+                    architecto cum expedita dolorem porro culpa.
+                  </p>
+                </Collapsible>
+                <Collapsible title="How do I cancel my subscription?">
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Aut, neque tenetur repellat obcaecati illum autem officiis
+                    odit excepturi exercitationem repudiandae atque unde nemo,
+                    corporis ratione saepe vitae, eveniet nesciunt beatae.
+                  </p>
+                </Collapsible>
+                <Collapsible title="How do I cancel my subscription?">
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Eum vitae neque quidem, in architecto a nam, atque
+                    doloribus eos sequi molestias cumque quo dignissimos
+                    culpa, omnis maiores repudiandae amet dolorum?
+                  </p>
+                </Collapsible>
+                <Collapsible title="Can I upgrade my plan?">
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Et libero cupiditate suscipit nisi ipsum quae distinctio
+                    quos architecto cum placeat eum quia, reprehenderit alias
+                    officia accusamus dolores recusandae dolore. Delectus.
+                  </p>
+                </Collapsible>
+                <Collapsible title="Can I upgrade my plan?">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptates qui fugit provident vitae unde obcaecati
+                    blanditiis error quo in consequatur aperiam, quis
+                    quibusdam ad quidem dolor explicabo dignissimos facilis
+                    odio!
+                  </p>
+                </Collapsible>
               </div>
-            </Animated>
+            </div>
           </div>
         </section>
       </div>
