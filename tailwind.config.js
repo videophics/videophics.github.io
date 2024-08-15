@@ -10,7 +10,7 @@ export default {
   extend: {
    colors: {
     primary: "#E5B808",
-    secondary: "#0a52a6",
+    secondary: "#410AC2",
     background: "#212121",
     navbar: "#444444",
     "slate-light": "#BDC3C7",

@@ -39,14 +39,14 @@ export default function Home() {
               }}
             >
               Branding is all about{" "}
-              <span className="text-slate">
+              <span className="text-gray-light">
                 storytelling
-              </span>. We{" "}<span className="text-slate">
+              </span>. We{" "}<span className="text-gray-light">
                 visualize
               </span>{" "}
               your touchy stories
             </h1>
-            <p className="text-[14px] md:text-[17px] mt-4 mb-7 xl:px-10 text-slate leading-6 md:leading-7 font-medium">
+            <p className="text-[14px] md:text-[17px] mt-4 mb-7 xl:px-10 text-slate-light leading-6 md:leading-7 font-medium">
               We bring brands and people closer. With a focus on
               emotion-driven connections, we craft experiences that resonate
               and endure.

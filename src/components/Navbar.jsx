@@ -6,7 +6,7 @@ export default function Navbar() {
 
   const ServicesList = ({ mobile }) => (
     <>
-      <Link className="w-fit hover:text-slate" to="/services">
+      <Link className="w-fit hover:text-gray-light" to="/services">
         <li
           className={
             !mobile
@@ -18,7 +18,7 @@ export default function Navbar() {
           <p className="_hover">Overview</p>
         </li>
       </Link>
-      <Link className="w-fit hover:text-slate" to="/services/branding">
+      <Link className="w-fit hover:text-gray-light" to="/services/branding">
         <li
           className={
             !mobile
@@ -31,7 +31,7 @@ export default function Navbar() {
           <p className="_hover">Branding</p>
         </li>
       </Link>
-      <Link className="w-fit hover:text-slate" to="/services/development">
+      <Link className="w-fit hover:text-gray-light" to="/services/development">
         <li
           className="border-b-[2px] border-transparent hover:border-blue-500"
           index="3"
@@ -40,7 +40,7 @@ export default function Navbar() {
           <p className="_hover">Development</p>
         </li>
       </Link>
-      <Link className="w-fit hover:text-slate" to="/services/brand-advisory">
+      <Link className="w-fit hover:text-gray-light" to="/services/brand-advisory">
         <li
           className="border-b-[2px] border-transparent hover:border-blue-500"
           index="2"
@@ -49,7 +49,7 @@ export default function Navbar() {
           <p className="_hover">Brand Advisory</p>
         </li>
       </Link>
-      <Link className="w-fit hover:text-slate" to="/services/marketing">
+      <Link className="w-fit hover:text-gray-light" to="/services/marketing">
         <li
           className="border-b-[2px] border-transparent hover:border-blue-500"
           index="4"
@@ -58,7 +58,7 @@ export default function Navbar() {
           <p className="_hover">Marketing</p>
         </li>
       </Link>
-      <Link className="w-fit hover:text-slate" to="/services/content-writing">
+      <Link className="w-fit hover:text-gray-light" to="/services/content-writing">
         <li
           className="border-b-[2px] border-transparent hover:border-blue-500"
           index="5"
@@ -67,7 +67,7 @@ export default function Navbar() {
           <p className="_hover">Content Writing</p>
         </li>
       </Link>
-      <Link className="w-fit hover:text-slate" to="/services/software-testing">
+      <Link className="w-fit hover:text-gray-light" to="/services/software-testing">
         <li
           className="border-b-[2px] border-transparent hover:border-blue-500"
           index="6"
@@ -86,7 +86,7 @@ export default function Navbar() {
       >
         <a
           id="navServiceMenuItem"
-          className="hidden lg:block hover:text-slate hover:bg-gray-400/5"
+          className="hidden lg:block hover:text-slate-light hover:bg-gray-400/5"
           onMouseEnter={() => {
             document
               .querySelector("._services-menu")
@@ -155,13 +155,13 @@ export default function Navbar() {
           </ol>
         </div>
       </li>
-      <li className="select-none hover:text-slate lg:hover:bg-gray-400/5">
+      <li className="select-none hover:text-slate-light lg:hover:bg-gray-400/5">
         <NavLink to="/about-us">About Us</NavLink>
       </li>
-      <li className="select-none hover:text-slate lg:hover:bg-gray-400/5">
+      <li className="select-none hover:text-slate-light lg:hover:bg-gray-400/5">
         <NavLink to="/blog">Blog</NavLink>
       </li>
-      <li className="select-none block lg:hidden hover:text-slate lg:hover:bg-gray-400/5">
+      <li className="select-none block lg:hidden hover:text-slate-light lg:hover:bg-gray-400/5">
         <a href="/#contact">Contact Us</a>
       </li>
     </>
@@ -180,6 +180,27 @@ export default function Navbar() {
     document
       .querySelector("._drawer-menu")
       .classList.add("-translate-y-[100rem]");
+  };
+
+  const initOffer = () => {
+    const totalSeconds = Math.floor(
+      (offerEndsIn.getTime() - new Date().getTime()) / 1000
+    );
+    
+    
+    if(totalSeconds <= 0) {
+      document.querySelector("._ad > div").style.display = "none";
+    }
+    
+    const d = Math.floor(totalSeconds / 3600 / 24);
+    const h = Math.floor(totalSeconds / 3600) % 24;
+    const m = Math.floor((totalSeconds % 3660) / 60);
+    const s = Math.floor(totalSeconds % 60);
+
+    document.getElementById("offerDays").textContent = d + "d";
+    document.getElementById("offerHours").textContent = h + "h";
+    document.getElementById("offerMinutes").textContent = m + "m";
+    document.getElementById("offerSeconds").textContent = s + "s";
   };
 
   useEffect(() => {
@@ -226,30 +247,16 @@ export default function Navbar() {
     };
   }, []);
 
-  const initOffer = () => {
-    const totalSeconds = Math.floor(
-      (offerEndsIn.getTime() - new Date().getTime()) / 1000
-    );
-    const d = Math.floor(totalSeconds / 3600 / 24);
-    const h = Math.floor(totalSeconds / 3600) % 24;
-    const m = Math.floor((totalSeconds % 3660) / 60);
-    const s = Math.floor(totalSeconds % 60);
-
-    document.getElementById("offerDays").textContent = d + "d";
-    document.getElementById("offerHours").textContent = h + "h";
-    document.getElementById("offerMinutes").textContent = m + "m";
-    document.getElementById("offerSeconds").textContent = s + "s";
-  };
 
   return (
     <>
-      <div className="_ad w-full relative bg-gradient-to-r from-[#410AC2] to-blue-600 z-20 py-3">
-        <div className="container mx-auto max-w-[1300px] text-white flex flex-col sm:flex-row justify-center sm:items-center gap-2 sm:gap-6 text-sm md:text-md lg:text-2md flex-wrap">
-          <div className="md:ml-auto flex flex-wrap gap-1 md:gap-3">
+      <div className="_ad w-full bg-gradient-to-l from-secondary to-primary z-20 py-2">
+        <div className="container mx-auto max-w-[1300px] text-white flex flex-col sm:flex-row justify-center sm:items-center gap-2 sm:gap-6 text-sm md:text-md lg:text-2md flex-wrap hidden md:flex py-1">
+          <div className="flex flex-wrap gap-1 md:gap-3">
             <p className="font-[600]">Black Friday Sale!</p>
             <p>Up to 20% off in all packages!</p>
           </div>
-          <div className="flex md:flex">
+          <div className="flex">
             <code className="text-sm md:text-xl">
               <span
                 className="bg-white text-black px-2 py-1 rounded-md"
@@ -279,53 +286,11 @@ export default function Navbar() {
                 0s
               </span>
             </code>
-            <button
-              className="ml-auto block sm:hidden"
-              onClick={() => {
-                document.querySelector("._ad").style.display = "none";
-              }}
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-6 h-6"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M6 18 18 6M6 6l12 12"
-                />
-              </svg>
-            </button>
           </div>
-          <button
-            className="ml-auto hidden sm:block"
-            onClick={() => {
-              document.querySelector("._ad").style.display = "none";
-            }}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="w-6 h-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M6 18 18 6M6 6l12 12"
-              />
-            </svg>
-          </button>
         </div>
       </div>
       <nav
-        className="_navbar sticky top-0 left-0 z-50 py-4 lg:p-0 text-white border-b backdrop-blur-lg bg-navbar-dark/80 border-gray-500/70"
+        className="_navbar sticky top-0 left-0 z-50 py-4 lg:p-0 text-white border-b backdrop-blur-lg bg-navbar/50 border-gray-500/70"
         role="navigation"
       >
         <div className="container mx-auto flex justify-between gap-4">
@@ -350,7 +315,7 @@ export default function Navbar() {
           <div className="flex gap-5 md:gap-4 justify-end items-center">
             <NavLink
               to="/contact-us"
-              className="bg-blue-700 text-white text-sm px-6 py-3 rounded-md from-blue-500 to-blue-700 bg-gradient-to-l hover:from-blue-600 hover:to-blue-800 active:scale-95 hidden md:block"
+              className="bg-primary text-black font-bold text-sm px-6 py-3 rounded-md from-primary to-orange-500 bg-gradient-to-l hover:from-blue-600 hover:to-blue-800 active:scale-95 hidden md:block"
             >
               Contact Us
             </NavLink>
