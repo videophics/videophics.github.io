@@ -49,7 +49,6 @@ export default function Cookie() {
             </li>
             <p>We collect the following information:</p>
             <ul className="list-disc ml-7">
-              <li>Dark/Light Theme</li>
               <li>Language Preference</li>
               <li>Contact Information</li>
             </ul>

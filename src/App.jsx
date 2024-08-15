@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 /* Layout */
@@ -23,21 +22,6 @@ import Admin_BlogAdd from "./pages/admin/BlogAdd";
 import Admin_Sitemap from "./pages/admin/Sitemap";
 
 export default function App() {
-  const [theme, setTheme] = useState(
-    localStorage.getItem("theme") || "dark"
-  );
-
-  useEffect(() => {
-    if (theme === "dark") {
-      document.documentElement.classList.add("dark");
-      localStorage.setItem("theme", "dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-      localStorage.setItem("theme", "light");
-    }
-    return () => { };
-  }, [theme]);
-
   return (
     <>
       <BrowserRouter>
@@ -46,7 +30,7 @@ export default function App() {
           <Route
             path="/"
             element={
-              <Layout theme={theme} setTheme={setTheme}>
+              <Layout>
                 <Home />
               </Layout>
             }
@@ -54,7 +38,7 @@ export default function App() {
           <Route
             path="/services/:service"
             element={
-              <Layout theme={theme} setTheme={setTheme}>
+              <Layout>
                 <ServicesView />
               </Layout>
             }
@@ -62,7 +46,7 @@ export default function App() {
           <Route
             path="/services"
             element={
-              <Layout theme={theme} setTheme={setTheme}>
+              <Layout>
 
               </Layout>
             }
@@ -70,7 +54,7 @@ export default function App() {
           <Route
             path="/about-us"
             element={
-              <Layout theme={theme} setTheme={setTheme}>
+              <Layout>
                 <AboutUs />
               </Layout>
             }
@@ -78,7 +62,7 @@ export default function App() {
           <Route
             path="/blog"
             element={
-              <Layout theme={theme} setTheme={setTheme}>
+              <Layout>
                 <Blog />
               </Layout>
             }
@@ -86,7 +70,7 @@ export default function App() {
           <Route
             path="/blog/:id"
             element={
-              <Layout theme={theme} setTheme={setTheme}>
+              <Layout>
                 <BlogView />
               </Layout>
             }
@@ -94,7 +78,7 @@ export default function App() {
           <Route
             path="/contact-us"
             element={
-              <Layout theme={theme} setTheme={setTheme}>
+              <Layout>
                 <ContactUs />
               </Layout>
             }
@@ -104,7 +88,7 @@ export default function App() {
           <Route
             path="/admin"
             element={
-              <Layout theme={theme} setTheme={setTheme}>
+              <Layout>
                 <Admin_Home />
               </Layout>
             }
@@ -112,7 +96,7 @@ export default function App() {
           <Route
             path="/admin/blog"
             element={
-              <Layout theme={theme} setTheme={setTheme}>
+              <Layout>
                 <Admin_Blog />
               </Layout>
             }
@@ -120,7 +104,7 @@ export default function App() {
           <Route
             path="/admin/blog/edit/:postId"
             element={
-              <Layout theme={theme} setTheme={setTheme}>
+              <Layout>
                 <Admin_BlogEdit />
               </Layout>
             }
@@ -128,7 +112,7 @@ export default function App() {
           <Route
             path="/admin/blog/add"
             element={
-              <Layout theme={theme} setTheme={setTheme}>
+              <Layout>
                 <Admin_BlogAdd />
               </Layout>
             }
@@ -136,7 +120,7 @@ export default function App() {
           <Route
             path="/admin/sitemap"
             element={
-              <Layout theme={theme} setTheme={setTheme}>
+              <Layout>
                 <Admin_Sitemap />
               </Layout>
             }
@@ -146,7 +130,7 @@ export default function App() {
           <Route
             path="/legal/privacy-policy"
             element={
-              <Layout theme={theme} setTheme={setTheme}>
+              <Layout>
                 <Privacy />
               </Layout>
             }
@@ -154,7 +138,7 @@ export default function App() {
           <Route
             path="/legal/cookies-policy"
             element={
-              <Layout theme={theme} setTheme={setTheme}>
+              <Layout>
                 <Cookie />
               </Layout>
             }
@@ -162,7 +146,7 @@ export default function App() {
           <Route
             path="/legal/terms-and-conditions"
             element={
-              <Layout theme={theme} setTheme={setTheme}>
+              <Layout>
                 <Terms />
               </Layout>
             }
@@ -176,7 +160,7 @@ export default function App() {
           <Route
             path="*"
             element={
-              <Layout theme={theme} setTheme={setTheme}>
+              <Layout>
                 <NotFound />
               </Layout>
             }
