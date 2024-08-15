@@ -11,18 +11,9 @@ export default {
    colors: {
     primary: "#E5B808",
     secondary: "#0a52a6",
-    background: {
-     DEFAULT: "#FFFFFF",
-     dark: "#313131",
-    },
-    navbar: {
-     DEFAULT: "#FBFBFB",
-     dark: "#444",
-    },
-    slate: {
-     DEFAULT: "#BDC3C7",
-     light: "#777",
-    },
+    background: "#212121",
+    navbar: "#444444",
+    "slate-light": "#BDC3C7",
     "gray-light": "#FFFCFE",
     "orange-light": "#FFFFC5",
    },

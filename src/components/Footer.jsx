@@ -1,16 +1,16 @@
 function Footer() {
   return (
-    <footer className="_footer bg-gray-700 dark:bg-gray-800 text-white py-8">
+    <footer className="_footer bg-gray-800 text-white py-8">
       <div className="container mx-auto mt-6 mb-10 max-w-[1300px] gap-12 flex flex-col md:flex-row md:justify-between">
         <div className="md:max-w-[350px] lg:max-w-[450px]">
           <div className="flex items-center gap-4">
             <img src="/logo.jpg" className="w-[50px] rounded-lg" />
             <h1 className="font-[500] text-xl">Videophics</h1>
           </div>
-          <p className="text-sm leading-6 mt-4 dark:text-gray-300">
+          <p className="text-sm leading-6 mt-4 text-gray-300">
             Videophics is a leading branding agency dedicated to empowering your brand's growth and success. Through our expertise in emotion-driven storytelling and strategic branding, we create enduring experiences that resonate with your audience.
           </p>
-          <button className="text-gray-800 dark:text-white bg-white dark:bg-blue-700 dark:bg-blue-700 dark:text-white rounded-full px-6 py-3 mt-6 text-sm flex gap-2">
+          <button className="text-white bg-blue-700 rounded-full px-6 py-3 mt-6 text-sm flex gap-2">
             Company Deck
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -31,7 +31,7 @@ function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-3 gap-20 flex-row sm:justify-between">
           <div>
             <h3 className="text-md uppercase">Quick Links</h3>
-            <div className="text-white dark:text-gray-300 flex flex-col gap-2 mt-5 text-[15px]">
+            <div className="text-gray-300 flex flex-col gap-2 mt-5 text-[15px]">
               <a href="/" className="hover:underline">
                 Home
               </a>
@@ -51,7 +51,7 @@ function Footer() {
           </div>
           <div>
             <h3 className="text-md uppercase">Services</h3>
-            <div className="text-white dark:text-gray-300 flex flex-col gap-2 mt-5 text-[15px]">
+            <div className="text-gray-300 flex flex-col gap-2 mt-5 text-[15px]">
               <a href="/services/branding" className="hover:underline">
                 Branding
               </a>
@@ -74,7 +74,7 @@ function Footer() {
           </div>
           <div>
             <h3 className="text-md uppercase">Legal</h3>
-            <div className="text-white dark:text-gray-300 flex flex-col gap-2 mt-5 text-[15px]">
+            <div className="text-gray-300 flex flex-col gap-2 mt-5 text-[15px]">
               <a href="/legal/privacy-policy" className="hover:underline">
                 Privacy Policy
               </a>
@@ -89,8 +89,8 @@ function Footer() {
         </div>
         <div className="min-w-[10px]"></div>
       </div>
-      <div className="container mx-auto max-w-[1300px] gap-4 flex flex-col items-center sm:flex-row sm:justify-between border-t border-[rgba(255,255,255,0.1)] dark:border-gray-700 pt-6">
-        <p className="text-md dark:text-gray-400">
+      <div className="container mx-auto max-w-[1300px] gap-4 flex flex-col items-center sm:flex-row sm:justify-between border-t border-gray-700 pt-6">
+        <p className="text-md text-gray-400">
           © 2024 Videophics, All Rights Reserved.
         </p>
         <div className="flex space-x-5">

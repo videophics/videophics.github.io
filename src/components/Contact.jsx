@@ -2,12 +2,12 @@ export default function Contact() {
   return (
     <>
       <div>
-        <h3 className="text-3xl lg:text-4xl font-[600] mb-4 text-gray-500 dark:text-white leading-10">
+        <h3 className="text-3xl lg:text-4xl font-[600] mb-4 text-white leading-10">
           Let's talk about your project.
         </h3>
-        <p className="text-md text-gray-500 dark:text-white pt-6">
+        <p className="text-md text-white pt-6">
           <p className="flex gap-2 leading-6 text-lg">
-            <span className="text-gray-700 dark:text-white">
+            <span className="text-white">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -23,24 +23,24 @@ export default function Contact() {
                 />
               </svg>
             </span>{" "}
-            <span className="text-blue-700 dark:text-blue-400">
+            <span className="text-blue-400">
               contact@videophics.com
             </span>
           </p>
           <p className="leading-6 mt-6">
-            <span className="text-blue-700 dark:text-blue-400">
+            <span className="text-blue-400">
               Office Hours:
             </span>{" "}
             9:00 AM - 9:00 PM (GMT+6)
           </p>
           <p className="leading-6">
-            <span className="text-blue-700 dark:text-blue-400">
+            <span className="text-blue-400">
               Address:
             </span>{" "}
             Dhaka, Bangladesh
           </p>
           <p className="leading-6">
-            <span className="text-blue-700 dark:text-blue-400">
+            <span className="text-blue-400">
               Facebook:
             </span>{" "}
             https://facebook.com/videophics
@@ -77,14 +77,14 @@ export default function Contact() {
           <div className="flex flex-col gap-2">
             <label
               htmlFor="name"
-              className="text-sm text-gray-500 dark:text-white"
+              className="text-sm text-white"
             >
               Full Name
             </label>
             <input
               type="text"
               id="name"
-              className="p-3 rounded-md border-2 border-gray-200 focus:outline-none focus:border-blue-500 dark:bg-gray-800 dark:text-white dark:border-gray-500"
+              className="p-3 rounded-md border-2 focus:outline-none focus:border-blue-500 bg-gray-800 text-white border-gray-500"
               placeholder="Abdullah"
             />
           </div>
@@ -92,14 +92,14 @@ export default function Contact() {
             <div className="flex flex-col gap-2">
               <label
                 htmlFor="company"
-                className="text-sm text-gray-500 dark:text-white"
+                className="text-sm text-white"
               >
                 Company Name *
               </label>
               <input
                 type="text"
                 id="company"
-                className="p-3 rounded-md border-2 border-gray-200 focus:outline-none focus:border-blue-500 dark:bg-gray-800 dark:text-white dark:border-gray-500"
+                className="p-3 rounded-md border-2 focus:outline-none focus:border-blue-500 bg-gray-800 text-white border-gray-500"
                 placeholder="Example Inc."
                 required
               />
@@ -107,14 +107,14 @@ export default function Contact() {
             <div className="flex flex-col gap-2">
               <label
                 htmlFor="email"
-                className="text-sm text-gray-500 dark:text-white"
+                className="text-sm text-white"
               >
                 Email Address *
               </label>
               <input
                 type="email"
                 id="email"
-                className="p-3 rounded-md border-2 border-gray-200 focus:outline-none focus:border-blue-500 dark:bg-gray-800 dark:text-white dark:border-gray-500"
+                className="p-3 rounded-md border-2 focus:outline-none focus:border-blue-500 bg-gray-800 text-white border-gray-500"
                 placeholder="contact@example.com"
                 required
               />
@@ -122,12 +122,12 @@ export default function Contact() {
             <div className="flex flex-col gap-2">
               <label
                 htmlFor="service"
-                className="text-sm text-gray-500 dark:text-white"
+                className="text-sm text-white"
               >
                 Select Service *
               </label>
               <select
-                className="p-3 rounded-md border-2 bg-white border-gray-200 focus:outline-none focus:border-blue-500 dark:bg-gray-800 dark:text-white dark:border-gray-500"
+                className="p-3 rounded-md border-2 bg-white focus:outline-none focus:border-blue-500 bg-gray-800 text-white border-gray-500"
                 id="service"
                 required
               >
@@ -142,12 +142,12 @@ export default function Contact() {
             <div className="flex flex-col gap-2">
               <label
                 htmlFor="range"
-                className="text-sm text-gray-500 dark:text-white"
+                className="text-sm text-white"
               >
                 Budget Range *
               </label>
               <select
-                className="p-3 rounded-md border-2 bg-white border-gray-200 focus:outline-none focus:border-blue-500 dark:bg-gray-800 dark:text-white dark:border-gray-500"
+                className="p-3 rounded-md border-2 bg-white focus:outline-none focus:border-blue-500 bg-gray-800 text-white border-gray-500"
                 id="range"
                 required
               >
@@ -161,13 +161,13 @@ export default function Contact() {
           <div className="flex flex-col gap-2">
             <label
               htmlFor="message"
-              className="text-sm text-gray-500 dark:text-white"
+              className="text-sm text-white"
             >
               Details *
             </label>
             <textarea
               id="message"
-              className="p-3 rounded-md border-2 border-gray-200 focus:outline-none focus:border-blue-500 dark:bg-gray-800 dark:text-white dark:border-gray-500"
+              className="p-3 rounded-md border-2 focus:outline-none focus:border-blue-500 bg-gray-800 text-white border-gray-500"
               placeholder="Your project details"
               required
             />

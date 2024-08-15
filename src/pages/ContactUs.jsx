@@ -13,7 +13,7 @@ export default function ContactUs() {
       <div className="container mx-auto max-w-[1300px] pb-12">
         <section
           id="booking"
-          className="_booking-section py-12 md:py-[6rem] bg-blue-500 dark:bg-gray-950/50 flex flex-col justify-center items-center rounded-lg my-12"
+          className="_booking-section py-12 md:py-[6rem] bg-gray-950/50 flex flex-col justify-center items-center rounded-lg my-12"
         >
           <Booking />
         </section>

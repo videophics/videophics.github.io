@@ -11,7 +11,7 @@ const Branding = () => {
       <section className="_hero-section min-h-[90vh] grid lg:grid-cols-2 gap-9 items-center py-12">
         <div>
           <h1 className="text-5xl font-bold">Branding</h1>
-          <p className="text-xl text-gray-700 dark:text-gray-300 mt-8 leading-8">
+          <p className="text-xl text-gray-300 mt-8 leading-8">
             Elevate your brand with our comprehensive branding solutions. We
             help you create a strong brand identity that resonates with your
             audience.
@@ -27,7 +27,7 @@ const Branding = () => {
         <img
           src="/images/static/brandingView.webp"
           alt="Branding"
-          className="w-full object-cover rounded-lg bg-gray-300 dark:bg-gray-700"
+          className="w-full object-cover rounded-lg bg-gray-700"
           style={{ aspectRatio: "16/9" }}
         />
       </section>
@@ -44,9 +44,9 @@ const Branding = () => {
                 className="w-full object-cover rounded-t-md mx-auto bg-gray-300 bg-gray-500"
                 style={{ aspectRatio: "3/2" }}
               />
-              <div className="bg-gray-300 dark:bg-gray-800 p-6 rounded-b-md">
+              <div className="bg-gray-800 p-6 rounded-b-md">
                 <h3 className="text-2xl font-semibold">Logo Design</h3>
-                <p className="mt-3 text-gray-500 dark:text-gray-400">
+                <p className="mt-3 text-gray-400">
                   Create a memorable logo to represent your brand across all
                   platforms.
                 </p>
@@ -59,9 +59,9 @@ const Branding = () => {
                 className="w-full object-cover rounded-t-md mx-auto bg-gray-300 bg-gray-500"
                 style={{ aspectRatio: "3/2" }}
               />
-              <div className="bg-gray-300 dark:bg-gray-800 p-6 rounded-b-md">
+              <div className="bg-gray-800 p-6 rounded-b-md">
                 <h3 className="text-2xl font-semibold">Brand Messaging</h3>
-                <p className="mt-3 text-gray-500 dark:text-gray-400">
+                <p className="mt-3 text-gray-400">
                   Develop a unique brand voice that resonates with your
                   audience.
                 </p>
@@ -74,11 +74,11 @@ const Branding = () => {
                 className="w-full object-cover rounded-t-md mx-auto bg-gray-300 bg-gray-500"
                 style={{ aspectRatio: "3/2" }}
               />
-              <div className="bg-gray-300 dark:bg-gray-800 p-6 rounded-b-md">
+              <div className="bg-gray-800 p-6 rounded-b-md">
                 <h3 className="text-2xl font-semibold">
                   Social Media Branding
                 </h3>
-                <p className="mt-3 text-gray-500 dark:text-gray-400">
+                <p className="mt-3 text-gray-400">
                   Create a consistent brand image across all social media
                   platforms.
                 </p>
@@ -91,9 +91,9 @@ const Branding = () => {
                 className="w-full object-cover rounded-t-md mx-auto bg-gray-300 bg-gray-500"
                 style={{ aspectRatio: "3/2" }}
               />
-              <div className="bg-gray-300 dark:bg-gray-800 p-6 rounded-b-md">
+              <div className="bg-gray-800 p-6 rounded-b-md">
                 <h3 className="text-2xl font-semibold">UI/UX Design</h3>
-                <p className="mt-3 text-gray-500 dark:text-gray-400">
+                <p className="mt-3 text-gray-400">
                   Create a visually appealing and user-friendly interface
                   for your website or app.
                 </p>
@@ -106,9 +106,9 @@ const Branding = () => {
                 className="w-full object-cover rounded-t-md mx-auto bg-gray-300 bg-gray-500"
                 style={{ aspectRatio: "3/2" }}
               />
-              <div className="bg-gray-300 dark:bg-gray-800 p-6 rounded-b-md">
+              <div className="bg-gray-800 p-6 rounded-b-md">
                 <h3 className="text-2xl font-semibold">Web Design</h3>
-                <p className="mt-3 text-gray-500 dark:text-gray-400">
+                <p className="mt-3 text-gray-400">
                   Build a stunning website that is easy to navigate and use.
                 </p>
               </div>
@@ -120,9 +120,9 @@ const Branding = () => {
                 className="w-full object-cover rounded-t-md mx-auto bg-gray-300 bg-gray-500"
                 style={{ aspectRatio: "3/2" }}
               />
-              <div className="bg-gray-300 dark:bg-gray-800 p-6 rounded-b-md">
+              <div className="bg-gray-800 p-6 rounded-b-md">
                 <h3 className="text-2xl font-semibold">Graphic Design</h3>
-                <p className="mt-3 text-gray-500 dark:text-gray-400">
+                <p className="mt-3 text-gray-400">
                   Create visually appealing graphics for your website and
                   social media.
                 </p>
@@ -141,7 +141,7 @@ const BrandAdvisory = () => {
       <section className="_hero-section min-h-[90vh] grid lg:grid-cols-2 gap-9 items-center py-12">
         <div>
           <h1 className="text-5xl font-bold">Brand Advisory</h1>
-          <p className="text-xl text-gray-700 dark:text-gray-300 mt-8 leading-8">
+          <p className="text-xl text-gray-300 mt-8 leading-8">
             Get expert advice on building and growing your brand with our
             brand advisory solutions. We help you develop a strategic brand
             plan that aligns with your business goals.
@@ -157,7 +157,7 @@ const BrandAdvisory = () => {
         <img
           src="/images/static/designOne.webp"
           alt="Brand Advisory"
-          className="w-full object-cover rounded-lg bg-gray-300 dark:bg-gray-700"
+          className="w-full object-cover rounded-lg bg-gray-700"
           style={{ aspectRatio: "16/9" }}
         />
       </section>
@@ -174,9 +174,9 @@ const BrandAdvisory = () => {
                 className="w-full object-cover rounded-t-md mx-auto bg-gray-300 bg-gray-500"
                 style={{ aspectRatio: "3/2" }}
               />
-              <div className="bg-gray-300 dark:bg-gray-800 p-6 rounded-b-md">
+              <div className="bg-gray-800 p-6 rounded-b-md">
                 <h3 className="text-2xl font-semibold">Brand Consulting</h3>
-                <p className="mt-3 text-gray-500 dark:text-gray-400">
+                <p className="mt-3 text-gray-400">
                   Get expert advice on building and growing your brand with
                   a strategic brand plan.
                 </p>
@@ -189,9 +189,9 @@ const BrandAdvisory = () => {
                 className="w-full object-cover rounded-t-md mx-auto bg-gray-300 bg-gray-500"
                 style={{ aspectRatio: "3/2" }}
               />
-              <div className="bg-gray-300 dark:bg-gray-800 p-6 rounded-b-md">
+              <div className="bg-gray-800 p-6 rounded-b-md">
                 <h3 className="text-2xl font-semibold">Brand Strategy</h3>
-                <p className="mt-3 text-gray-500 dark:text-gray-400">
+                <p className="mt-3 text-gray-400">
                   Develop a comprehensive brand strategy that defines your
                   brand's identity and positioning.
                 </p>
@@ -204,9 +204,9 @@ const BrandAdvisory = () => {
                 className="w-full object-cover rounded-t-md mx-auto bg-gray-300 bg-gray-500"
                 style={{ aspectRatio: "3/2" }}
               />
-              <div className="bg-gray-300 dark:bg-gray-800 p-6 rounded-b-md">
+              <div className="bg-gray-800 p-6 rounded-b-md">
                 <h3 className="text-2xl font-semibold">Brand Messaging</h3>
-                <p className="mt-3 text-gray-500 dark:text-gray-400">
+                <p className="mt-3 text-gray-400">
                   Develop a compelling brand story that resonates with your
                   audience and communicates your brand values.
                 </p>
@@ -225,7 +225,7 @@ const Development = () => {
       <section className="_hero-section min-h-[90vh] grid lg:grid-cols-2 gap-9 items-center py-12">
         <div>
           <h1 className="text-5xl font-bold">Web Development</h1>
-          <p className="text-xl text-gray-700 dark:text-gray-300 mt-8 leading-8">
+          <p className="text-xl text-gray-300 mt-8 leading-8">
             Build a stunning website or web application with our development
             solutions. We help you create a functional and user-friendly web
             app that meets your business needs.
@@ -241,7 +241,7 @@ const Development = () => {
         <img
           src="/images/static/eYpcLDXHVb0-unsplash.jpg"
           alt="Web Development"
-          className="w-full object-cover rounded-lg bg-gray-300 dark:bg-gray-700"
+          className="w-full object-cover rounded-lg bg-gray-700"
           style={{ aspectRatio: "16/9" }}
         />
       </section>
@@ -258,11 +258,11 @@ const Development = () => {
                 className="w-full object-cover rounded-t-md mx-auto bg-gray-300 bg-gray-500"
                 style={{ aspectRatio: "3/2" }}
               />
-              <div className="bg-gray-300 dark:bg-gray-800 p-6 rounded-b-md">
+              <div className="bg-gray-800 p-6 rounded-b-md">
                 <h3 className="text-2xl font-semibold">
                   Frontend Development
                 </h3>
-                <p className="mt-3 text-gray-500 dark:text-gray-400">
+                <p className="mt-3 text-gray-400">
                   Create frontend interfaces that are visually appealing and
                   user-friendly.
                 </p>
@@ -275,11 +275,11 @@ const Development = () => {
                 className="w-full object-cover rounded-t-md mx-auto bg-gray-300 bg-gray-500"
                 style={{ aspectRatio: "3/2" }}
               />
-              <div className="bg-gray-300 dark:bg-gray-800 p-6 rounded-b-md">
+              <div className="bg-gray-800 p-6 rounded-b-md">
                 <h3 className="text-2xl font-semibold">
                   Backend Development
                 </h3>
-                <p className="mt-3 text-gray-500 dark:text-gray-400">
+                <p className="mt-3 text-gray-400">
                   Develop backend systems that power your website or web
                   application.
                 </p>
@@ -292,9 +292,9 @@ const Development = () => {
                 className="w-full object-cover rounded-t-md mx-auto bg-gray-300 bg-gray-500"
                 style={{ aspectRatio: "3/2" }}
               />
-              <div className="bg-gray-300 dark:bg-gray-800 p-6 rounded-b-md">
+              <div className="bg-gray-800 p-6 rounded-b-md">
                 <h3 className="text-2xl font-semibold">API Development</h3>
-                <p className="mt-3 text-gray-500 dark:text-gray-400">
+                <p className="mt-3 text-gray-400">
                   Build custom APIs to connect your website or app to
                   external services.
                 </p>
@@ -313,7 +313,7 @@ const Marketing = () => {
       <section className="_hero-section min-h-[90vh] grid lg:grid-cols-2 gap-9 items-center py-12">
         <div>
           <h1 className="text-5xl font-bold">Digital Marketing</h1>
-          <p className="text-xl text-gray-700 dark:text-gray-300 mt-8 leading-8">
+          <p className="text-xl text-gray-300 mt-8 leading-8">
             Grow your online presence with our digital marketing solutions. We
             help you reach your target audience and drive traffic to your
             website or app.
@@ -329,7 +329,7 @@ const Marketing = () => {
         <img
           src="/images/static/tZc3vjPCk-Q-unsplash.jpg"
           alt="Marketing"
-          className="w-full object-cover rounded-lg bg-gray-300 dark:bg-gray-700"
+          className="w-full object-cover rounded-lg bg-gray-700"
           style={{ aspectRatio: "16/9" }}
         />
       </section>
@@ -346,9 +346,9 @@ const Marketing = () => {
                 className="w-full object-cover rounded-t-md mx-auto bg-gray-300 bg-gray-500"
                 style={{ aspectRatio: "3/2" }}
               />
-              <div className="bg-gray-300 dark:bg-gray-800 p-6 rounded-b-md">
+              <div className="bg-gray-800 p-6 rounded-b-md">
                 <h3 className="text-2xl font-semibold">SEO</h3>
-                <p className="mt-3 text-gray-500 dark:text-gray-400">
+                <p className="mt-3 text-gray-400">
                   Improve your website's search engine rankings and
                   visibility.
                 </p>
@@ -361,11 +361,11 @@ const Marketing = () => {
                 className="w-full object-cover rounded-t-md mx-auto bg-gray-300 bg-gray-500"
                 style={{ aspectRatio: "3/2" }}
               />
-              <div className="bg-gray-300 dark:bg-gray-800 p-6 rounded-b-md">
+              <div className="bg-gray-800 p-6 rounded-b-md">
                 <h3 className="text-2xl font-semibold">
                   Social Media Marketing
                 </h3>
-                <p className="mt-3 text-gray-500 dark:text-gray-400">
+                <p className="mt-3 text-gray-400">
                   Promote your brand and engage with your audience on social
                   media platforms.
                 </p>
@@ -378,11 +378,11 @@ const Marketing = () => {
                 className="w-full object-cover rounded-t-md mx-auto bg-gray-300 bg-gray-500"
                 style={{ aspectRatio: "3/2" }}
               />
-              <div className="bg-gray-300 dark:bg-gray-800 p-6 rounded-b-md">
+              <div className="bg-gray-800 p-6 rounded-b-md">
                 <h3 className="text-2xl font-semibold">
                   Content Marketing
                 </h3>
-                <p className="mt-3 text-gray-500 dark:text-gray-400">
+                <p className="mt-3 text-gray-400">
                   Create valuable content that attracts and engages your
                   target audience.
                 </p>
@@ -401,7 +401,7 @@ const ContentWriting = () => {
       <section className="_hero-section min-h-[90vh] grid lg:grid-cols-2 gap-9 items-center py-12">
         <div>
           <h1 className="text-5xl font-bold">Content Writing</h1>
-          <p className="text-xl text-gray-700 dark:text-gray-300 mt-8 leading-8">
+          <p className="text-xl text-gray-300 mt-8 leading-8">
             Create engaging and informative content with our content writing
             solutions. We help you develop high-quality content that drives
             traffic and conversions.
@@ -417,7 +417,7 @@ const ContentWriting = () => {
         <img
           src="/images/static/zIwAchjDirM-unsplash.jpg"
           alt="Content Writing"
-          className="w-full object-cover rounded-lg bg-gray-300 dark:bg-gray-700"
+          className="w-full object-cover rounded-lg bg-gray-700"
           style={{ aspectRatio: "16/9" }}
         />
       </section>
@@ -434,9 +434,9 @@ const ContentWriting = () => {
                 className="w-full object-cover rounded-t-md mx-auto bg-gray-300 bg-gray-500"
                 style={{ aspectRatio: "3/2" }}
               />
-              <div className="bg-gray-300 dark:bg-gray-800 p-6 rounded-b-md">
+              <div className="bg-gray-800 p-6 rounded-b-md">
                 <h3 className="text-2xl font-semibold">Blog Writing</h3>
-                <p className="mt-3 text-gray-500 dark:text-gray-400">
+                <p className="mt-3 text-gray-400">
                   Create engaging blog posts that attract and inform your
                   audience.
                 </p>
@@ -449,9 +449,9 @@ const ContentWriting = () => {
                 className="w-full object-cover rounded-t-md mx-auto bg-gray-300 bg-gray-500"
                 style={{ aspectRatio: "3/2" }}
               />
-              <div className="bg-gray-300 dark:bg-gray-800 p-6 rounded-b-md">
+              <div className="bg-gray-800 p-6 rounded-b-md">
                 <h3 className="text-2xl font-semibold">Copywriting</h3>
-                <p className="mt-3 text-gray-500 dark:text-gray-400">
+                <p className="mt-3 text-gray-400">
                   Develop compelling copy that drives conversions and sales.
                 </p>
               </div>
@@ -463,9 +463,9 @@ const ContentWriting = () => {
                 className="w-full object-cover rounded-t-md mx-auto bg-gray-300 bg-gray-500"
                 style={{ aspectRatio: "3/2" }}
               />
-              <div className="bg-gray-300 dark:bg-gray-800 p-6 rounded-b-md">
+              <div className="bg-gray-800 p-6 rounded-b-md">
                 <h3 className="text-2xl font-semibold">SEO Writing</h3>
-                <p className="mt-3 text-gray-500 dark:text-gray-400">
+                <p className="mt-3 text-gray-400">
                   Write SEO-friendly content that ranks well in search
                   engines.
                 </p>
@@ -481,11 +481,11 @@ const ContentWriting = () => {
 const SoftwareTesting = () => {
   return (
     <>
-      <div className="container mx-auto text-gray-800 dark:text-white">
+      <div className="container mx-auto text-white">
         <section className="_hero-section min-h-[90vh] grid lg:grid-cols-2 gap-9 items-center py-12">
           <div>
             <h1 className="text-5xl font-bold">Software Testing</h1>
-            <p className="text-xl text-gray-700 dark:text-gray-300 mt-8 leading-8">
+            <p className="text-xl text-gray-300 mt-8 leading-8">
               Fix bugs and issues in your website or web application with our
               software testing solutions. We help you identify and resolve technical
               problems to ensure a smooth user experience.
@@ -501,7 +501,7 @@ const SoftwareTesting = () => {
           <img
             src="/images/static/wvJuYrM5iuw-unsplash.jpg"
             alt="Software Testing"
-            className="w-full object-cover rounded-lg bg-gray-300 dark:bg-gray-700"
+            className="w-full object-cover rounded-lg bg-gray-700"
             style={{ aspectRatio: "16/9" }}
           />
         </section>
@@ -518,11 +518,11 @@ const SoftwareTesting = () => {
                   className="w-full object-cover rounded-t-md mx-auto bg-gray-300 bg-gray-500"
                   style={{ aspectRatio: "3/2" }}
                 />
-                <div className="bg-gray-300 dark:bg-gray-800 p-6 rounded-b-md">
+                <div className="bg-gray-800 p-6 rounded-b-md">
                   <h3 className="text-2xl font-semibold">
                     Website Debugging
                   </h3>
-                  <p className="mt-3 text-gray-500 dark:text-gray-400">
+                  <p className="mt-3 text-gray-400">
                     Identify and fix technical issues in your website to
                     ensure optimal performance.
                   </p>
@@ -535,9 +535,9 @@ const SoftwareTesting = () => {
                   className="w-full object-cover rounded-t-md mx-auto bg-gray-300 bg-gray-500"
                   style={{ aspectRatio: "3/2" }}
                 />
-                <div className="bg-gray-300 dark:bg-gray-800 p-6 rounded-b-md">
+                <div className="bg-gray-800 p-6 rounded-b-md">
                   <h3 className="text-2xl font-semibold">Code Refactoring</h3>
-                  <p className="mt-3 text-gray-500 dark:text-gray-400">
+                  <p className="mt-3 text-gray-400">
                     Improve the structure and readability of your code for
                     better performance.
                   </p>
@@ -550,11 +550,11 @@ const SoftwareTesting = () => {
                   className="w-full object-cover rounded-t-md mx-auto bg-gray-300 bg-gray-500"
                   style={{ aspectRatio: "3/2" }}
                 />
-                <div className="bg-gray-300 dark:bg-gray-800 p-6 rounded-b-md">
+                <div className="bg-gray-800 p-6 rounded-b-md">
                   <h3 className="text-2xl font-semibold">
                     Database Optimization
                   </h3>
-                  <p className="mt-3 text-gray-500 dark:text-gray-400">
+                  <p className="mt-3 text-gray-400">
                     Optimize your database to improve data retrieval and
                     storage efficiency.
                   </p>
@@ -645,7 +645,7 @@ export default function ServicesView() {
                 : "Discover our comprehensive services including branding, marketing, development, and more."
             } />
         </Helmet>
-        <div className="container mx-auto text-gray-800 dark:text-white max-w-[1300px]">
+        <div className="container mx-auto text-white max-w-[1300px]">
           {srvc && componentsList[srvc] ? (
             componentsList[srvc]
           ) : (

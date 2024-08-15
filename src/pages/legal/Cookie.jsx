@@ -3,10 +3,10 @@ export default function Cookie() {
   return (
     <>
       <div className="container mx-auto max-w-[1300px] py-20">
-        <h1 className="text-4xl font-bold text-gray-800 dark:text-white">
+        <h1 className="text-4xl font-bold text-white">
           Cookies Policy
         </h1>
-        <div className="mt-10 text-gray-800 dark:text-white">
+        <div className="mt-10 text-white">
           <ul className="list-decimal">
             <li className="text-2xl font-bold ml-7 mb-7 mt-12">
               What is a cookie?

@@ -12,17 +12,17 @@ export default function AboutUs() {
           content="We are a branding agency that helps businesses grow organically. We provide best solutions for your business."
         />
       </Helmet>
-      <div className="container mx-auto max-w-[1300px] py-20 text-gray-800 dark:text-white">
+      <div className="container mx-auto max-w-[1300px] py-20 text-white">
         <h1 className="text-4xl font-bold text-center">
           Branding Agency —{" "}
-          <span className="text-blue-700 dark:text-blue-500">
+          <span className="text-blue-500">
             Organic Growth
           </span>
         </h1>
         <img
           src="/images/static/aboutView.webp"
           alt="Branding"
-          className="w-full h-96 object-cover mt-10 rounded-md bg-gray-200 dark:bg-gray-800"
+          className="w-full h-96 object-cover mt-10 rounded-md bg-gray-800"
         />
         <p className="mt-10 text-lg leading-relaxed">
           Videophics is a branding agency that helps businesses grow

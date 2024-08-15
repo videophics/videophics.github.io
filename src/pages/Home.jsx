@@ -33,20 +33,20 @@ export default function Home() {
         <div className="container mx-auto max-w-[1300px] flex flex-col gap-10 lg:items-center">
           <div className="flex flex-col justify-center md:items-center md:text-center z-10 max-w-[620px] lg:max-w-[730px] mx-auto lg:mx-0 md:py-10 min-h-[75vh]">
             <h1
-              className="text-2xl sm:text-4xl lg:text-[2.6rem] xl:text-[3rem] font-bold mb-4 text-gray-700 dark:text-white sm:leading-10 lg:leading-13"
+              className="text-2xl sm:text-4xl lg:text-[2.6rem] xl:text-[3rem] font-bold mb-4 text-white sm:leading-10 lg:leading-13"
               style={{
                 letterSpacing: "-0.03em",
               }}
             >
               Branding is all about{" "}
-              <span className="text-slate-light dark:text-slate">
+              <span className="text-slate">
                 storytelling
-              </span>. We{" "}<span className="text-slate-light dark:text-slate">
+              </span>. We{" "}<span className="text-slate">
                 visualize
               </span>{" "}
               your touchy stories
             </h1>
-            <p className="text-[14px] md:text-[17px] mt-4 mb-7 xl:px-10 text-slate-light dark:text-slate leading-6 md:leading-7 font-medium">
+            <p className="text-[14px] md:text-[17px] mt-4 mb-7 xl:px-10 text-slate leading-6 md:leading-7 font-medium">
               We bring brands and people closer. With a focus on
               emotion-driven connections, we craft experiences that resonate
               and endure.
@@ -65,7 +65,7 @@ export default function Home() {
               </NavLink>
               <NavLink to="/services/">
                 <button
-                  className="text-sm md:text-[16px] dark:text-white bg-transparent border-b border-blue-500 hover:scale-95 w-fit"
+                  className="text-sm md:text-[16px] text-white bg-transparent border-b border-blue-500 hover:scale-95 w-fit"
                   title="Click here to compare our plans"
                 >
                   Find your service &rarr;
@@ -75,7 +75,7 @@ export default function Home() {
           </div>
 
           <div className="z-10 w-full">
-            <div className="bg-blue-100 dark:bg-gray-700 rounded-lg relative md:max-w-[75%] mx-auto">
+            <div className="bg-gray-700 rounded-lg relative md:max-w-[75%] mx-auto">
               <video
                 src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
                 autoPlay
@@ -132,56 +132,56 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="_services-section bg-blue-50/50 mt-9 dark:mt-0 dark:bg-transparent py-[7rem] md:min-h-[calc(100vh-80px)]">
+      <section className="_services-section py-[7rem] md:min-h-[calc(100vh-80px)]">
         <div className="container mx-auto max-w-[1300px]">
           <Services />
           <div className="_unique-features pt-[10rem] flex flex-col gap-12">
             <div className="min-h-[40vh] flex flex-col justify-center">
-              <h3 className="text-3xl lg:text-4xl font-[600] text-gray-700 dark:text-white leading-10 text-center mb-2">
+              <h3 className="text-3xl lg:text-4xl font-[600] text-white leading-10 text-center mb-2">
                 Why Choose Us?
               </h3>
-              <p className="text-[14px] md:text-[17px] text-gray-500 dark:text-gray-400 leading-6 md:leading-7 text-center mb-[4rem]">
+              <p className="text-[14px] md:text-[17px] text-gray-400 leading-6 md:leading-7 text-center mb-[4rem]">
                 What makes us different from others in the industry.
               </p>
               <div className="grid md:grid-cols-3 gap-12">
-                <div className="flex flex-col bg-gray-200 dark:bg-gray-800 p-6 rounded-lg h-full">
+                <div className="flex flex-col bg-gray-800 p-6 rounded-lg h-full">
                   <img
                     src="/images/static/organic.png"
                     alt="Quality"
                     className="w-16 h-16 mb-4"
                   />
-                  <h4 className="text-xl font-[600] mb-2 text-gray-700 dark:text-white leading-8">
+                  <h4 className="text-xl font-[600] mb-2 text-white leading-8">
                     Organic Reach
                   </h4>
-                  <p className="text-sm text-gray-500 dark:text-gray-400 leading-6">
+                  <p className="text-sm text-gray-400 leading-6">
                     We help you reach your audience organically without any
                     paid ads.
                   </p>
                 </div>
-                <div className="flex flex-col bg-gray-200 dark:bg-gray-800 p-6 rounded-lg h-full">
+                <div className="flex flex-col bg-gray-800 p-6 rounded-lg h-full">
                   <img
                     src="/images/static/emotion.png"
                     alt="Emotion"
                     className="w-16 h-16 mb-4"
                   />
-                  <h4 className="text-xl font-[600] mb-2 text-gray-700 dark:text-white leading-8">
+                  <h4 className="text-xl font-[600] mb-2 text-white leading-8">
                     Emotional Connection
                   </h4>
-                  <p className="text-sm text-gray-500 dark:text-gray-400 leading-6">
+                  <p className="text-sm text-gray-400 leading-6">
                     We help you building emotional connection between brand
                     and customer.
                   </p>
                 </div>
-                <div className="flex flex-col bg-gray-200 dark:bg-gray-800 p-6 rounded-lg h-full">
+                <div className="flex flex-col bg-gray-800 p-6 rounded-lg h-full">
                   <img
                     src="/images/static/story.png"
                     alt="Story"
                     className="w-16 h-16 mb-4"
                   />
-                  <h4 className="text-xl font-[600] mb-2 text-gray-700 dark:text-white leading-8">
+                  <h4 className="text-xl font-[600] mb-2 text-white leading-8">
                     Story Telling
                   </h4>
-                  <p className="text-sm text-gray-500 dark:text-gray-400 leading-6">
+                  <p className="text-sm text-gray-400 leading-6">
                     We help you finding the real connecting story of your
                     brand.
                   </p>
@@ -191,13 +191,13 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="_team-section bg-blue-50/50 dark:bg-transparent py-[8rem] pt-[6rem] flex flex-col justify-center items-center">
+      <section className="_team-section bg-transparent py-[8rem] pt-[6rem] flex flex-col justify-center items-center">
         <div className="container mx-auto max-w-[1300px]">
           <div className="text-center">
-            <p className="text-sm text-gray-500 dark:text-gray-400 leading-6 md:leading-7 mb-2 uppercase">
+            <p className="text-sm text-gray-400 leading-6 md:leading-7 mb-2 uppercase">
               Our Team
             </p>
-            <h3 className="text-3xl lg:text-4xl font-[600] mb-4 text-gray-700 dark:text-white leading-10">
+            <h3 className="text-3xl lg:text-4xl font-[600] mb-4 text-white leading-10">
               Meet Our Team
             </h3>
           </div>
@@ -208,10 +208,10 @@ export default function Home() {
                 className="w-full max-w-[300px] bg-blue-300 rounded-md object-cover"
                 style={{ aspectRatio: "3/3" }}
               />
-              <h4 className="text-xl font-[600] mt-4 text-gray-700 dark:text-white leading-8">
+              <h4 className="text-xl font-[600] mt-4 text-white leading-8">
                 Saad Al Amin
               </h4>
-              <p className="text-sm text-gray-500 dark:text-gray-400 leading-6">
+              <p className="text-sm text-gray-400 leading-6">
                 CEO & Founder
               </p>
             </div>
@@ -221,10 +221,10 @@ export default function Home() {
                 className="w-full max-w-[300px] bg-blue-300 rounded-md object-cover"
                 style={{ aspectRatio: "3/3" }}
               />
-              <h4 className="text-xl font-[600] mt-4 text-gray-700 dark:text-white leading-8">
+              <h4 className="text-xl font-[600] mt-4 text-white leading-8">
                 Unknown
               </h4>
-              <p className="text-sm text-gray-500 dark:text-gray-400 leading-6">
+              <p className="text-sm text-gray-400 leading-6">
                 Unknown
               </p>
             </div>
@@ -234,10 +234,10 @@ export default function Home() {
                 className="w-full max-w-[300px] bg-blue-300 rounded-md object-cover"
                 style={{ aspectRatio: "3/3" }}
               />
-              <h4 className="text-xl font-[600] mt-4 text-gray-700 dark:text-white leading-8">
+              <h4 className="text-xl font-[600] mt-4 text-white leading-8">
                 Zadid Al Lisan
               </h4>
-              <p className="text-sm text-gray-500 dark:text-gray-400 leading-6">
+              <p className="text-sm text-gray-400 leading-6">
                 CTO
               </p>
             </div>
@@ -247,10 +247,10 @@ export default function Home() {
                 className="w-full max-w-[300px] bg-blue-300 rounded-md object-cover"
                 style={{ aspectRatio: "3/3" }}
               />
-              <h4 className="text-xl font-[600] mt-4 text-gray-700 dark:text-white leading-8">
+              <h4 className="text-xl font-[600] mt-4 text-white leading-8">
                 Unknown
               </h4>
-              <p className="text-sm text-gray-500 dark:text-gray-400 leading-6">
+              <p className="text-sm text-gray-400 leading-6">
                 Unknown
               </p>
             </div>
@@ -260,24 +260,24 @@ export default function Home() {
                 className="w-full max-w-[300px] bg-blue-300 rounded-md object-cover"
                 style={{ aspectRatio: "3/3" }}
               />
-              <h4 className="text-xl font-[600] mt-4 text-gray-700 dark:text-white leading-8">
+              <h4 className="text-xl font-[600] mt-4 text-white leading-8">
                 Mohammad Sefatullah
               </h4>
-              <p className="text-sm text-gray-500 dark:text-gray-400 leading-6">
+              <p className="text-sm text-gray-400 leading-6">
                 Web Developer
               </p>
             </div>
           </div>
         </div>
       </section>
-      <div className="bg-blue-0 dark:bg-gray-800 py-[4rem]">
+      <div className="bg-gray-800 py-[4rem]">
         <section className="_clients-section pb-[4rem] flex flex-col justify-center items-center pt-[4rem]">
           <Clients />
         </section>
         <div className="container mx-auto max-w-[1300px]">
           <section
             id="booking"
-            className="_booking-section py-12 md:py-[6.5rem] bg-blue-500 dark:bg-gray-900 flex flex-col justify-center items-center rounded-lg"
+            className="_booking-section py-12 md:py-[6.5rem] bg-gray-900 flex flex-col justify-center items-center rounded-lg"
           >
             <Booking />
           </section>
@@ -288,13 +288,13 @@ export default function Home() {
         >
           <div className="container mx-auto max-w-[1300px]">
             <div className="text-center">
-              <h3 className="text-3xl lg:text-4xl font-[600] text-gray-700 dark:text-white leading-10">
+              <h3 className="text-3xl lg:text-4xl font-[600] text-white leading-10">
                 Frequently Asked Questions
               </h3>
-              <p className="text-[14px] mt-4 md:text-[17px] text-gray-500 dark:text-gray-400 leading-6 md:leading-7 mb-8">
+              <p className="text-[14px] mt-4 md:text-[17px] text-gray-400 leading-6 md:leading-7 mb-8">
                 Can't find what you're looking for? Reach out to our{" "}
                 <a
-                  className="text-blue-700 dark:text-blue-400"
+                  className="text-blue-400"
                   href="/support"
                 >
                   support team
@@ -351,7 +351,7 @@ export default function Home() {
         </section>
       </div>
       <section
-        className="_contact-section bg-blue-50/50 dark:bg-transparent py-[8rem] flex flex-col justify-center items-center"
+        className="_contact-section bg-transparent py-[8rem] flex flex-col justify-center items-center"
         id="contact"
       >
         <div className="container mx-auto max-w-[1300px] grid md:grid-cols-2 gap-10">

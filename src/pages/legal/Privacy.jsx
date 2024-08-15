@@ -3,10 +3,10 @@ export default function Privacy() {
   return (
     <>
       <div className="container mx-auto max-w-[1300px] py-20">
-        <h1 className="text-4xl font-bold text-gray-800 dark:text-white">
+        <h1 className="text-4xl font-bold text-white">
           Privacy Policy
         </h1>
-        <div className="mt-10 text-gray-800 dark:text-white">
+        <div className="mt-10 text-white">
           <p>
             Your privacy is important to us. It is Videophics' policy to respect
             your privacy regarding any information we may collect from you

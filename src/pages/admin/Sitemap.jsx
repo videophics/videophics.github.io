@@ -30,12 +30,12 @@ function Sitemap() {
           <Helmet>
             <title>Manage Sitemap - Admin</title>
           </Helmet>
-          <div className="container mx-auto max-w-[1300px] py-10 text-gray-800 dark:text-white">
+          <div className="container mx-auto max-w-[1300px] py-10 text-white">
             <Link to="/admin">
               <button className="mb-5">&larr; Go back</button>
             </Link>
-            <h1 className="text-3xl md:text-4xl font-[500] text-center text-gray-800 dark:text-white">
-              <span className="text-gray-500 dark:text-gray-500">Admin /</span>{" "}
+            <h1 className="text-3xl md:text-4xl font-[500] text-center text-white">
+              <span className="text-gray-500">Admin /</span>{" "}
               Sitemap
             </h1>
             <div className="mt-12 flex flex-col lg:flex-row justify-center gap-9 pt-2">
@@ -51,14 +51,14 @@ function Sitemap() {
                           type="text"
                           id="url"
                           placeholder="https://videophics.com/?/.../..."
-                          className="text-gray-800 p-3 py-[0.6rem] border border-gray-200 dark:border-gray-700 rounded-md dark:bg-gray-700 dark:text-white dark:border-blue-500 dark:border-2"
+                          className="p-3 py-[0.6rem] border rounded-md bg-gray-700 text-white border-blue-500 border-2"
                           value={addnewsitemapInput1}
                           onChange={(e) =>
                             setAddnewsitemapInput1(e.target.value)
                           }
                         />
                         <p
-                          className="text-gray-500 dark:text-gray-400"
+                          className="text-gray-400"
                           style={{
                             fontSize: "0.8rem",
                           }}
@@ -74,14 +74,14 @@ function Sitemap() {
                         <input
                           type="date"
                           id="lastmod"
-                          className="text-gray-800 p-3 py-[0.6rem] border border-gray-200 dark:border-gray-700 rounded-md dark:bg-gray-700 dark:text-white dark:border-blue-500 dark:border-2"
+                          className="p-3 py-[0.6rem] border rounded-md bg-gray-700 text-white border-blue-500 border-2"
                           value={addnewsitemapInput2}
                           onChange={(e) =>
                             setAddnewsitemapInput2(e.target.value)
                           }
                         />
                         <p
-                          className="text-gray-500 dark:text-gray-400"
+                          className="text-gray-400"
                           style={{
                             fontSize: "0.8rem",
                           }}
@@ -94,7 +94,7 @@ function Sitemap() {
                         <label htmlFor="changefreq">Change Frequency</label>
                         <select
                           id="changefreq"
-                          className="text-gray-800 p-3 py-[0.6rem] border border-gray-200 dark:border-gray-700 rounded-md dark:bg-gray-700 dark:text-white dark:border-blue-500 dark:border-2"
+                          className="p-3 py-[0.6rem] border rounded-md bg-gray-700 text-white border-blue-500 border-2"
                           value={addnewsitemapInput3}
                           onChange={(e) =>
                             setAddnewsitemapInput3(e.target.value)
@@ -165,7 +165,7 @@ function Sitemap() {
                       </button>
                     </form>
                   </div>
-                  <div className="border border-gray-200 dark:border-gray-700 rounded-md p-4 dark:border-blue-500 dark:border-2">
+                  <div className="border rounded-md p-4 border-blue-500 border-2">
                     <button
                       className="bg-blue-500 text-white px-4 py-2 mb-6 rounded-md"
                       onClick={() => {
@@ -193,7 +193,7 @@ function Sitemap() {
                               <div style={{ whiteSpace: "wrap" }}>
                                 <strong>URL:</strong> {item.loc._text}
                               </div>
-                              <div className="text-gray-500 dark:text-gray-400 flex flex-col md:flex-row gap-2 md:items-center pb-1">
+                              <div className="text-gray-400 flex flex-col md:flex-row gap-2 md:items-center pb-1">
                                 <div>
                                   <div>
                                     <strong>Last Modified:</strong>{" "}

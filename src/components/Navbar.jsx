@@ -6,24 +6,24 @@ export default function Navbar() {
 
   const ServicesList = ({ mobile }) => (
     <>
-      <Link className="w-fit hover:text-slate-light dark:hover:text-slate" to="/services">
+      <Link className="w-fit hover:text-slate" to="/services">
         <li
           className={
             !mobile
-              ? "border-b-[2px] border-transparent hover:border-blue-700 dark:hover:border-blue-500"
-              : "border-b-[2px] border-transparent dark:hover:border-blue-500"
+              ? "border-b-[2px] border-transparent hover:border-blue-500"
+              : "border-b-[2px] border-transparent hover:border-blue-500"
           }
         >
           <p className={mobile && "hidden"}>Overview</p>
           <p className="_hover">Overview</p>
         </li>
       </Link>
-      <Link className="w-fit hover:text-slate-light dark:hover:text-slate" to="/services/branding">
+      <Link className="w-fit hover:text-slate" to="/services/branding">
         <li
           className={
             !mobile
-              ? "border-b-[2px] border-transparent hover:border-blue-700 dark:hover:border-blue-500"
-              : "border-b-[2px] border-transparent dark:hover:border-blue-500"
+              ? "border-b-[2px] border-transparent hover:border-blue-500"
+              : "border-b-[2px] hover:border-blue-500"
           }
           index="1"
         >
@@ -31,45 +31,45 @@ export default function Navbar() {
           <p className="_hover">Branding</p>
         </li>
       </Link>
-      <Link className="w-fit hover:text-slate-light dark:hover:text-slate" to="/services/development">
+      <Link className="w-fit hover:text-slate" to="/services/development">
         <li
-          className="border-b-[2px] border-transparent hover:border-blue-700 dark:hover:border-blue-500"
+          className="border-b-[2px] border-transparent hover:border-blue-500"
           index="3"
         >
           <p className={mobile && "hidden"}>Development</p>
           <p className="_hover">Development</p>
         </li>
       </Link>
-      <Link className="w-fit hover:text-slate-light dark:hover:text-slate" to="/services/brand-advisory">
+      <Link className="w-fit hover:text-slate" to="/services/brand-advisory">
         <li
-          className="border-b-[2px] border-transparent hover:border-blue-700 dark:hover:border-blue-500"
+          className="border-b-[2px] border-transparent hover:border-blue-500"
           index="2"
         >
           <p className={mobile && "hidden"}>Brand Advisory</p>
           <p className="_hover">Brand Advisory</p>
         </li>
       </Link>
-      <Link className="w-fit hover:text-slate-light dark:hover:text-slate" to="/services/marketing">
+      <Link className="w-fit hover:text-slate" to="/services/marketing">
         <li
-          className="border-b-[2px] border-transparent hover:border-blue-700 dark:hover:border-blue-500"
+          className="border-b-[2px] border-transparent hover:border-blue-500"
           index="4"
         >
           <p className={mobile && "hidden"}>Marketing</p>
           <p className="_hover">Marketing</p>
         </li>
       </Link>
-      <Link className="w-fit hover:text-slate-light dark:hover:text-slate" to="/services/content-writing">
+      <Link className="w-fit hover:text-slate" to="/services/content-writing">
         <li
-          className="border-b-[2px] border-transparent hover:border-blue-700 dark:hover:border-blue-500"
+          className="border-b-[2px] border-transparent hover:border-blue-500"
           index="5"
         >
           <p className={mobile && "hidden"}>Content Writing</p>
           <p className="_hover">Content Writing</p>
         </li>
       </Link>
-      <Link className="w-fit hover:text-slate-light dark:hover:text-slate" to="/services/software-testing">
+      <Link className="w-fit hover:text-slate" to="/services/software-testing">
         <li
-          className="border-b-[2px] border-transparent hover:border-blue-700 dark:hover:border-blue-500"
+          className="border-b-[2px] border-transparent hover:border-blue-500"
           index="6"
         >
           <p className={mobile && "hidden"}>Software Testing</p>
@@ -86,7 +86,7 @@ export default function Navbar() {
       >
         <a
           id="navServiceMenuItem"
-          className="hidden lg:block hover:text-slate-light dark:hover:text-slate hover:bg-gray-300/25 dark:hover:bg-gray-400/5"
+          className="hidden lg:block hover:text-slate hover:bg-gray-400/5"
           onMouseEnter={() => {
             document
               .querySelector("._services-menu")
@@ -105,7 +105,7 @@ export default function Navbar() {
             fill="none"
             viewBox="0 0 24 24"
             strokeWidth={2}
-            className="w-4 h-4 inline-block stroke-gray-400 dark:stroke-gray-400"
+            className="w-4 h-4 inline-block stroke-gray-400"
           >
             <path
               strokeLinecap="round"
@@ -128,7 +128,7 @@ export default function Navbar() {
             fill="none"
             viewBox="0 0 24 24"
             strokeWidth={2}
-            className="w-4 h-4 inline-block stroke-gray-400 dark:stroke-gray-500"
+            className="w-4 h-4 inline-block stroke-gray-500"
           >
             <path
               strokeLinecap="round"
@@ -143,25 +143,25 @@ export default function Navbar() {
           </ol>
         </div>
         <div
-          className="_services-menu bg-white dark:bg-gray-800 absolute -translate-y-[100rem] transition-all duration-500 ease-in-out px-6 shadow-md opacity-0 hidden md:block w-auto whitespace-nowrap"
+          className="_services-menu bg-gray-800 absolute -translate-y-[100rem] transition-all duration-500 ease-in-out px-6 shadow-md opacity-0 hidden md:block w-auto whitespace-nowrap"
           role="menu"
           style={{ zIndex: "10" }}
         >
           <ol
-            className="custom flex flex-col gap-3 text-lg font-[500] text-gray-700 dark:text-white py-[1.5rem] "
+            className="custom flex flex-col gap-3 text-lg font-[500] text-white py-[1.5rem] "
             onClick={hideServiceMenu}
           >
             <ServicesList />
           </ol>
         </div>
       </li>
-      <li className="select-none hover:text-slate-light dark:hover:text-slate g:hover:blg-gray-300/25 lg:dark:hover:bg-gray-400/5">
+      <li className="select-none hover:text-slate lg:hover:bg-gray-400/5">
         <NavLink to="/about-us">About Us</NavLink>
       </li>
-      <li className="select-none hover:text-slate-light dark:hover:text-slate lg:hover:bg-gray-300/25 lg:dark:hover:bg-gray-400/5">
+      <li className="select-none hover:text-slate lg:hover:bg-gray-400/5">
         <NavLink to="/blog">Blog</NavLink>
       </li>
-      <li className="select-none block lg:hidden hover:text-slate-light dark:hover:text-slate lg;hover:bg-gray-300/25 lg:dark:hover:bg-gray-400/5">
+      <li className="select-none block lg:hidden hover:text-slate lg:hover:bg-gray-400/5">
         <a href="/#contact">Contact Us</a>
       </li>
     </>
@@ -195,9 +195,7 @@ export default function Navbar() {
         }
       }
     };
-  }, []);
 
-  useEffect(() => {
     const servicesMenuList = document.querySelectorAll("._services-menu ol li");
     servicesMenuList.forEach((li) => {
       li.addEventListener("mouseenter", () => {
@@ -217,7 +215,16 @@ export default function Navbar() {
     } else {
       document.querySelector("._ad").style.display = "block";
     }
-  }, [document.querySelector("._services-menu ol li")]);
+
+    const i = setInterval(() => {
+      initOffer();
+    }, 1000);
+    initOffer();
+
+    return () => {
+      clearInterval(i);
+    };
+  }, []);
 
   const initOffer = () => {
     const totalSeconds = Math.floor(
@@ -234,21 +241,10 @@ export default function Navbar() {
     document.getElementById("offerSeconds").textContent = s + "s";
   };
 
-  useEffect(() => {
-    const i = setInterval(() => {
-      initOffer();
-    }, 1000);
-    initOffer();
-
-    return () => {
-      clearInterval(i);
-    };
-  }, []);
-
   return (
     <>
-      <div className="_ad w-full relative bg-blue-100 dark:bg-gradient-to-r dark:from-[#410AC2] dark:to-blue-600 z-20 py-3">
-        <div className="container mx-auto max-w-[1300px] text-gray-700 dark:text-white flex flex-col sm:flex-row justify-center sm:items-center gap-2 sm:gap-6 text-sm md:text-md lg:text-2md flex-wrap">
+      <div className="_ad w-full relative bg-gradient-to-r from-[#410AC2] to-blue-600 z-20 py-3">
+        <div className="container mx-auto max-w-[1300px] text-white flex flex-col sm:flex-row justify-center sm:items-center gap-2 sm:gap-6 text-sm md:text-md lg:text-2md flex-wrap">
           <div className="md:ml-auto flex flex-wrap gap-1 md:gap-3">
             <p className="font-[600]">Black Friday Sale!</p>
             <p>Up to 20% off in all packages!</p>
@@ -329,7 +325,7 @@ export default function Navbar() {
         </div>
       </div>
       <nav
-        className="_navbar sticky top-0 left-0 z-50 py-4 lg:p-0 text-black dark:text-white border-b border-[#cecece] bg-blue-50/90 backdrop-blur-lg bg-navbar dark:bg-navbar-dark/80 dark:border-gray-500/70"
+        className="_navbar sticky top-0 left-0 z-50 py-4 lg:p-0 text-white border-b backdrop-blur-lg bg-navbar-dark/80 border-gray-500/70"
         role="navigation"
       >
         <div className="container mx-auto flex justify-between gap-4">
@@ -359,7 +355,7 @@ export default function Navbar() {
               Contact Us
             </NavLink>
             <button
-              className="text-black p-2 rounded-full active:scale-95 active:bg-gray-100 block lg:hidden dark:text-white dark:active:bg-gray-800 dark:active:text-white"
+              className="p-2 rounded-full active:scale-95 block lg:hidden active:bg-gray-800 text-white"
               onClick={() => {
                 document
                   .querySelector("._drawer-menu-layer")
@@ -394,7 +390,7 @@ export default function Navbar() {
         </div>
       </nav>
       <div
-        className="_drawer-menu max-w-[380px] w-[70%] bg-white dark:bg-gray-800 dark:text-white fixed top-0 right-0 h-full transform translate-x-full -translate-y-[100rem] transition-all duration-500 ease-in-out p-6 shadow text-xl rounded-lg"
+        className="_drawer-menu max-w-[380px] w-[70%] bg-gray-800 text-white fixed top-0 right-0 h-full transform translate-x-full -translate-y-[100rem] transition-all duration-500 ease-in-out p-6 shadow text-xl rounded-lg"
         role="menu"
         style={{ zIndex: "60" }}
       >

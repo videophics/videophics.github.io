@@ -3,10 +3,10 @@ export default function Terms() {
   return (
     <>
       <div className="container mx-auto max-w-[1300px] py-20">
-        <h1 className="text-4xl font-bold text-gray-800 dark:text-white">
+        <h1 className="text-4xl font-bold text-white">
           Terms & Conditions
         </h1>
-        <div className="mt-10 text-gray-800 dark:text-white">
+        <div className="mt-10 text-white">
           <p>
             These terms and conditions outline the rules and regulations for the
             use of Videophics' Website, located at videophics.com.

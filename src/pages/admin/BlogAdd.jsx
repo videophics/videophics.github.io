@@ -310,14 +310,14 @@ function BlogAdd() {
           <Helmet>
             <title>Add Blog Post - Admin</title>
           </Helmet>
-          <div className="container mx-auto max-w-[1300px] py-10 text-gray-800 dark:text-white">
+          <div className="container mx-auto max-w-[1300px] py-10 text-white">
             <Link to="/admin/blog">
               <button className="mb-5">&larr; Go back</button>
             </Link>
             <h1 className="text-4xl font-bold text-center">Add Blog Post</h1>
             <div className="mt-12 flex flex-col lg:flex-row justify-center gap-9">
               <form
-                className="bg-white dark:bg-gray-800 shadow-md rounded-md p-8 w-full max-w-[700px]"
+                className="bg-gray-800 shadow-md rounded-md p-8 w-full max-w-[700px]"
                 onSubmit={(e) => {
                   e.preventDefault();
                 }}
@@ -342,8 +342,8 @@ function BlogAdd() {
                       }}
                     />
                     <label htmlFor="thumbnail" className="cursor-pointer">
-                      <div className="bg-gray-200 dark:bg-gray-700 p-4 rounded-md flex items-center justify-center gap-2">
-                        <span className="text-gray-800 dark:text-white font-[500] text-sm">
+                      <div className="bg-gray-700 p-4 rounded-md flex items-center justify-center gap-2">
+                        <span className="text-white font-[500] text-sm">
                           Upload Thumbnail
                         </span>
                       </div>
@@ -358,7 +358,7 @@ function BlogAdd() {
                       name="title"
                       id="title"
                       placeholder="What is Branding? The Ultimate Guide"
-                      className="text-gray-800 p-2 border border-gray-200 dark:border-gray-700 rounded-md dark:bg-gray-700 dark:text-white dark:border-blue-500 dark:border-2"
+                      className="p-2 border rounded-md bg-gray-700 text-white border-blue-500 border-2"
                     />
                   </div>
                   <div className="flex flex-col sm:flex-row gap-4">
@@ -369,7 +369,7 @@ function BlogAdd() {
                         name="author"
                         id="author"
                         placeholder="Abdullah"
-                        className="text-gray-800 p-2 border border-gray-200 dark:border-gray-700 rounded-md dark:bg-gray-700 dark:text-white dark:border-blue-500 dark:border-2"
+                        className="p-2 border rounded-md bg-gray-700 text-white border-blue-500 border-2"
                       />
                     </div>
                     <div className="flex flex-col gap-2 sm:w-[35%]">
@@ -379,7 +379,7 @@ function BlogAdd() {
                       <select
                         name="category"
                         id="category"
-                        className="text-gray-800 p-3 py-[0.6rem] border border-gray-200 dark:border-gray-700 rounded-md dark:bg-gray-700 dark:text-white dark:border-blue-500 dark:border-2"
+                        className="p-3 py-[0.6rem] border rounded-md bg-gray-700 text-white border-blue-500 border-2"
                       >
                         <option value="Branding">Branding</option>
                         <option value="Development">Development</option>
@@ -399,7 +399,7 @@ function BlogAdd() {
                     </label>
                     <div
                       id="_blog-body-editor"
-                      className="border border-gray-200 dark:border-gray-700 rounded-md p-4 dark:border-blue-500 dark:border-2 min-h-[300px]"
+                      className="border rounded-md p-4 border-blue-500 border-2 min-h-[300px]"
                     ></div>
                   </div>
                 </div>
@@ -415,8 +415,8 @@ function BlogAdd() {
               <div className="w-full">
                 <div id="top" className="mb-5 min-h-[200px] relative">
                   {!thumbnail ? (
-                    <div className="absolute bg-gray-200 w-full h-full dark:bg-gray-700 p-4 rounded-md flex items-center justify-center">
-                      <span className="text-gray-800 dark:text-white font-[500] text-sm">
+                    <div className="absolute w-full h-full bg-gray-700 p-4 rounded-md flex items-center justify-center">
+                      <span className="text-white font-[500] text-sm">
                         Thumbnail Preview
                       </span>
                     </div>
@@ -431,7 +431,7 @@ function BlogAdd() {
                 </div>
                 {thumbnail && (
                   <button
-                    className="mb-5 bg-red-500 dark:bg-red-600 dark:hover:bg-red-700 hover:bg-red-600 text-white font-[500] text-sm py-2 px-4 rounded flex items-center gap-1"
+                    className="mb-5 bg-red-600 hover:bg-red-700 text-white font-[500] text-sm py-2 px-4 rounded flex items-center gap-1"
                     onClick={(e) => {
                       if (
                         window.confirm(
@@ -461,7 +461,7 @@ function BlogAdd() {
                 )}
                 <div
                   id="output"
-                  className="_blog-body border border-gray-200 dark:border-gray-700 rounded-md p-4 dark:border-blue-500 dark:border-2"
+                  className="_blog-body border rounded-md p-4 border-blue-500 border-2"
                 ></div>
               </div>
             </div>

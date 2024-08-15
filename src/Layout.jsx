@@ -8,7 +8,7 @@ export default function Layout({ children }) {
     }, [children]);
 
     return (
-        <main className="bg-background dark:bg-background-dark">
+        <main className="bg-background">
             <Navbar />
             <div className="min-h-screen" role="main">
                 {children}

@@ -36,8 +36,8 @@ export default function Blog() {
           name="description"
           content="Read our latest trending blogs on branding, marketing, and business growth." />
       </Helmet>
-      <div className="container mx-auto py-10 dark:text-white max-w-[1300px]">
-        <h1 className="text-4xl font-bold text-center text-gray-900 dark:text-gray-50">
+      <div className="container mx-auto py-10 text-white max-w-[1300px]">
+        <h1 className="text-4xl font-bold text-center text-gray-50">
           Blog
         </h1>
         <div className="pt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -51,12 +51,12 @@ export default function Blog() {
                 <img
                   src={blog.thumbnail}
                   alt={blog.title}
-                  className="w-full h-60 object-cover mt-5 bg-gray-300 dark:bg-gray-700 rounded-md"
+                  className="w-full h-60 object-cover mt-5 bg-gray-700 rounded-md"
                 />
-                <h1 className="text-2xl font-[500] text-gray-900 dark:text-gray-50 mt-5 mb-2">
+                <h1 className="text-2xl font-[500] text-gray-50 mt-5 mb-2">
                   {blog.title}
                 </h1>
-                <p className="text-gray-500 dark:text-gray-400">
+                <p className="text-gray-400">
                   {blog.author} | {blog.publishedAt.toDate().toDateString()}
                 </p>
               </div>
