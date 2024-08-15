@@ -317,7 +317,7 @@ function BlogAdd() {
             <h1 className="text-4xl font-bold text-center">Add Blog Post</h1>
             <div className="mt-12 flex flex-col lg:flex-row justify-center gap-9">
               <form
-                className="bg-gray-800 shadow-md rounded-md p-8 w-full max-w-[700px]"
+                className="bg-orange-light/10 shadow-md rounded-md p-8 w-full max-w-[700px]"
                 onSubmit={(e) => {
                   e.preventDefault();
                 }}

@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { NavLink, Link } from "react-router-dom";
 
 export default function Navbar() {
-  const offerEndsIn = new Date("19 April 2024");
+  const offerEndsIn = new Date("1 January 2025");
 
   const ServicesList = ({ mobile }) => (
     <>
@@ -80,6 +80,9 @@ export default function Navbar() {
   );
   const Menu = () => (
     <>
+      <li className="select-none hover:text-slate-light lg:hover:bg-gray-400/5">
+        <NavLink to="/">Home</NavLink>
+      </li>
       <li
         className="relative select-none"
         onMouseLeave={hideServiceMenu}
@@ -143,7 +146,7 @@ export default function Navbar() {
           </ol>
         </div>
         <div
-          className="_services-menu bg-gray-800 absolute -translate-y-[100rem] transition-all duration-500 ease-in-out px-6 shadow-md opacity-0 hidden md:block w-auto whitespace-nowrap"
+          className="_services-menu bg-slate-800 absolute -translate-y-[100rem] transition-all duration-500 ease-in-out px-6 shadow-md opacity-0 hidden md:block w-auto whitespace-nowrap"
           role="menu"
           style={{ zIndex: "10" }}
         >
@@ -186,12 +189,12 @@ export default function Navbar() {
     const totalSeconds = Math.floor(
       (offerEndsIn.getTime() - new Date().getTime()) / 1000
     );
-    
-    
-    if(totalSeconds <= 0) {
+
+
+    if (totalSeconds <= 0) {
       document.querySelector("._ad > div").style.display = "none";
     }
-    
+
     const d = Math.floor(totalSeconds / 3600 / 24);
     const h = Math.floor(totalSeconds / 3600) % 24;
     const m = Math.floor((totalSeconds % 3660) / 60);
@@ -250,7 +253,7 @@ export default function Navbar() {
 
   return (
     <>
-      <div className="_ad w-full bg-gradient-to-l from-secondary to-primary z-20 py-2">
+      <div className="_ad w-full bg-gradient-to-l from-dark-blue to-primary z-20 py-2">
         <div className="container mx-auto max-w-[1300px] text-white flex flex-col sm:flex-row justify-center sm:items-center gap-2 sm:gap-6 text-sm md:text-md lg:text-2md flex-wrap hidden md:flex py-1">
           <div className="flex flex-wrap gap-1 md:gap-3">
             <p className="font-[600]">Black Friday Sale!</p>
@@ -289,73 +292,76 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-      <nav
-        className="_navbar sticky top-0 left-0 z-50 py-4 lg:p-0 text-white border-b backdrop-blur-lg bg-navbar/50 border-gray-500/70"
-        role="navigation"
-      >
-        <div className="container mx-auto flex justify-between gap-4">
-          <div className="_logo flex items-center">
-            <NavLink to="/">
-              <h1 className="font-bold text-lg flex items-center">
-                <img
-                  src="/logo.jpg"
-                  alt="Videophics"
-                  className="h-8 w-8 object-cover rounded-md mr-2"
-                />
-                <span>Videophics</span>
-              </h1>
-            </NavLink>
+      <div className="nav-section sticky top-0 left-0 z-50">
+        <nav
+          className="_navbar py-4 lg:p-0 text-white backdrop-blur-lg bg-navbar/50 border-b border-gray-600/65 shadow-md"
+          role="navigation"
+        >
+          <div className="container mx-auto flex justify-between gap-4">
+            <div className="_logo flex items-center">
+              <NavLink to="/">
+                <h1 className="font-bold text-lg flex items-center">
+                  <img
+                    src="/logo.jpg"
+                    alt="Videophics"
+                    className="h-8 w-8 object-cover rounded-md mr-2"
+                  />
+                  <span>Videophics</span>
+                </h1>
+              </NavLink>
+            </div>
             <ol
               className="_menu ml-7 text-sm items-center hidden lg:flex"
               onClick={hideServiceMenu}
             >
               <Menu />
             </ol>
-          </div>
-          <div className="flex gap-5 md:gap-4 justify-end items-center">
-            <NavLink
-              to="/contact-us"
-              className="bg-primary text-black font-bold text-sm px-6 py-3 rounded-md from-primary to-orange-500 bg-gradient-to-l hover:from-blue-600 hover:to-blue-800 active:scale-95 hidden md:block"
-            >
-              Contact Us
-            </NavLink>
-            <button
-              className="p-2 rounded-full active:scale-95 block lg:hidden active:bg-gray-800 text-white"
-              onClick={() => {
-                document
-                  .querySelector("._drawer-menu-layer")
-                  .classList.toggle("hidden");
-                document
-                  .querySelector("._drawer-menu")
-                  .classList.toggle("transform");
-                document
-                  .querySelector("._drawer-menu")
-                  .classList.toggle("translate-x-full");
-                document
-                  .querySelector("._drawer-menu")
-                  .classList.toggle("-translate-y-[100rem]");
-              }}
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-6 h-6"
+            <div className="flex gap-5 md:gap-4 justify-end items-center">
+              <NavLink
+                to="/contact-us"
+                className="border-2 border-primary text-white font-bold text-sm px-6 py-3 rounded-md active:scale-95 hidden md:block hover:bg-primary hover:text-black transition-all duration-300 ease-in-out"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                />
-              </svg>
-            </button>
+                Contact Us
+              </NavLink>
+              <button
+                className="p-2 rounded-full active:scale-95 block lg:hidden active:bg-orange-light/10 text-white"
+                onClick={() => {
+                  document
+                    .querySelector("._drawer-menu-layer")
+                    .classList.toggle("hidden");
+                  document
+                    .querySelector("._drawer-menu")
+                    .classList.toggle("transform");
+                  document
+                    .querySelector("._drawer-menu")
+                    .classList.toggle("translate-x-full");
+                  document
+                    .querySelector("._drawer-menu")
+                    .classList.toggle("-translate-y-[100rem]");
+                }}
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  />
+                </svg>
+              </button>
+            </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+        {/*<div className="w-full h-[2px] bg-gradient-to-l from-primary/10 to-primary/80 blur mt-1" />*/}
+      </div>
       <div
-        className="_drawer-menu max-w-[380px] w-[70%] bg-gray-800 text-white fixed top-0 right-0 h-full transform translate-x-full -translate-y-[100rem] transition-all duration-500 ease-in-out p-6 shadow text-xl rounded-lg"
+        className="_drawer-menu max-w-[380px] w-[70%] bg-gray-700 text-white fixed top-0 right-0 h-full transform translate-x-full -translate-y-[100rem] transition-all duration-500 ease-in-out p-6 shadow text-xl rounded-lg"
         role="menu"
         style={{ zIndex: "60" }}
       >

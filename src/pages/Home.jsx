@@ -31,7 +31,7 @@ export default function Home() {
       </Helmet>
       <section className="_hero-section relative py-10 lg:min-h-[calc(100vh-80px)] flex justify-center">
         <div className="container mx-auto max-w-[1300px] flex flex-col gap-10 lg:items-center">
-          <div className="flex flex-col justify-center md:items-center md:text-center z-10 max-w-[620px] lg:max-w-[730px] mx-auto lg:mx-0 md:py-10 min-h-[75vh]">
+          <div className="flex flex-col justify-center md:items-center md:text-center z-10 max-w-[620px] lg:max-w-[750px] mx-auto lg:mx-0 md:py-10 min-h-[75vh]">
             <h1
               className="text-2xl sm:text-4xl lg:text-[2.6rem] xl:text-[3rem] font-bold mb-4 text-white sm:leading-10 lg:leading-13"
               style={{
@@ -54,7 +54,7 @@ export default function Home() {
             <div className="mt-3 flex gap-4 md:gap-10 flex-col items-center sm:flex-row">
               <NavLink to="/about-us">
                 <button
-                  className="px-7 text-md md:text-[16px] md:px-8 py-4 text-white rounded-lg from-blue-400 to-blue-600 bg-gradient-to-l hover:from-blue-500 hover:to-blue-700 active:scale-95 flex gap-1 items-center justify-center w-fit min-w-[200px]"
+                  className="px-7 text-md md:text-[16px] md:px-8 py-4 text-white font-bold rounded-lg border-2 border-primary active:scale-95 flex gap-1 items-center justify-center w-fit min-w-[200px] hover:scale-105"
                   title="Click here to learn more"
                 >
                   Learn more <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
@@ -65,7 +65,7 @@ export default function Home() {
               </NavLink>
               <NavLink to="/services/">
                 <button
-                  className="text-sm md:text-[16px] text-white bg-transparent border-b border-blue-500 hover:scale-95 w-fit"
+                  className="text-sm md:text-[16px] text-white bg-transparent border-b border-secondary pb-0.5 hover:scale-95 w-fit"
                   title="Click here to compare our plans"
                 >
                   Find your service &rarr;
@@ -144,7 +144,7 @@ export default function Home() {
                 What makes us different from others in the industry.
               </p>
               <div className="grid md:grid-cols-3 gap-12">
-                <div className="flex flex-col bg-gray-800 p-6 rounded-lg h-full">
+                <div className="flex flex-col bg-orange-light/10 p-6 rounded-lg h-full">
                   <img
                     src="/images/static/organic.png"
                     alt="Quality"
@@ -158,7 +158,7 @@ export default function Home() {
                     paid ads.
                   </p>
                 </div>
-                <div className="flex flex-col bg-gray-800 p-6 rounded-lg h-full">
+                <div className="flex flex-col bg-orange-light/10 p-6 rounded-lg h-full">
                   <img
                     src="/images/static/emotion.png"
                     alt="Emotion"
@@ -172,7 +172,7 @@ export default function Home() {
                     and customer.
                   </p>
                 </div>
-                <div className="flex flex-col bg-gray-800 p-6 rounded-lg h-full">
+                <div className="flex flex-col bg-orange-light/10 p-6 rounded-lg h-full">
                   <img
                     src="/images/static/story.png"
                     alt="Story"
@@ -270,7 +270,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <div className="bg-gray-800 py-[4rem]">
+      <div className="bg-orange-light/10 py-[4rem]">
         <section className="_clients-section pb-[4rem] flex flex-col justify-center items-center pt-[4rem]">
           <Clients />
         </section>

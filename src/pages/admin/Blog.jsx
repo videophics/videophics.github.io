@@ -46,7 +46,7 @@ function Blog() {
               Blog
             </h1>
             <div className="pt-8 mt-7">
-              <div className="mt-2 bg-gray-800 shadow-md rounded-md p-8">
+              <div className="mt-2 bg-orange-light/10 shadow-md rounded-md p-8">
                 <p className="text-white text-lg font-[600]">
                   My Blog
                 </p>

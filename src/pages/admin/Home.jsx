@@ -40,7 +40,7 @@ function Home() {
             </div>
             <div className="_admin-menu grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-12">
               <NavLink to="/admin/blog">
-                <div className="bg-gray-800 shadow-md rounded-md p-6 hover:shadow-lg transition duration-300 hover:hover:bg-gray-700 cursor-pointer select-none">
+                <div className="bg-orange-light/10 shadow-md rounded-md p-6 hover:shadow-lg transition duration-300 hover:hover:bg-gray-700 cursor-pointer select-none">
                   <h2 className="text-white text-lg font-[500]">
                     My Blog
                   </h2>
@@ -50,7 +50,7 @@ function Home() {
                 </div>
               </NavLink>
               <NavLink to="/admin/sitemap">
-                <div className="bg-gray-800 shadow-md rounded-md p-6 hover:shadow-lg transition duration-300 hover:hover:bg-gray-700 cursor-pointer select-none">
+                <div className="bg-orange-light/10 shadow-md rounded-md p-6 hover:shadow-lg transition duration-300 hover:hover:bg-gray-700 cursor-pointer select-none">
                   <h2 className="text-white text-lg font-[500]">
                     Sitemap
                   </h2>
