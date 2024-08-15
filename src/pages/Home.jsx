@@ -12,28 +12,6 @@ import { useState } from "react";
 export default function Home() {
   const [isMuted, setMuted] = useState(true);
 
-  const HGFRJh = () => (<div className="mt-3 flex gap-4 flex-col items-center sm:flex-row">
-    <NavLink to="/about-us">
-      <button
-        className="px-7 text-md md:text-[16px] md:px-8 py-3 text-white rounded-md from-blue-400 to-blue-600 bg-gradient-to-l hover:from-blue-500 hover:to-blue-700 active:scale-95 flex gap-1 items-center justify-center w-fit min-w-[200px]"
-        title="Click here to learn more"
-      >
-        Learn more <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-          <path strokeLinecap="round" strokeLinejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
-        </svg>
-
-      </button>
-    </NavLink>
-    <NavLink to="/services/">
-      <button
-        className="px-7 text-sm md:text-[16px] md:px-8 py-3.5 dark:text-white rounded-md bg-transparent border border-blue-500 active:scale-95 hover:bg-blue-500/20 hover:border-blue-100 w-fit"
-        title="Click here to compare our plans"
-      >
-        Visit our services &rarr;
-      </button>
-    </NavLink>
-  </div>);
-
   return (
     <div id="homepage">
       <Helmet>
@@ -52,8 +30,8 @@ export default function Home() {
         ></script>
       </Helmet>
       <section className="_hero-section relative py-10 lg:min-h-[calc(100vh-80px)] flex justify-center">
-        <div className="container mx-auto max-w-[1300px] flex flex-col sm:gap-10 lg:items-center">
-          <div className="flex flex-col justify-center md:items-center md:text-center z-10 max-w-[620px] lg:max-w-[730px] mx-auto lg:mx-0 md:py-10">
+        <div className="container mx-auto max-w-[1300px] flex flex-col gap-10 lg:items-center">
+          <div className="flex flex-col justify-center md:items-center md:text-center z-10 max-w-[620px] lg:max-w-[730px] mx-auto lg:mx-0 md:py-10 min-h-[75vh]">
             <h1
               className="text-2xl sm:text-4xl lg:text-[2.6rem] xl:text-[3rem] font-bold mb-4 text-gray-700 dark:text-white sm:leading-10 lg:leading-13"
               style={{
@@ -61,20 +39,38 @@ export default function Home() {
               }}
             >
               Branding is all about{" "}
-              <span className="text-blue-500 dark:text-blue-400">
+              <span className="text-slate-light dark:text-slate">
                 storytelling
-              </span>. We{" "}<span className="text-blue-500 dark:text-blue-400">
+              </span>. We{" "}<span className="text-slate-light dark:text-slate">
                 visualize
               </span>{" "}
               your touchy stories
             </h1>
-            <p className="text-[14px] md:text-[17px] mt-4 mb-7 xl:px-12 text-gray-500 dark:text-gray-400 leading-6 md:leading-7 _heroPara">
+            <p className="text-[14px] md:text-[17px] mt-4 mb-7 xl:px-10 text-slate-light dark:text-slate leading-6 md:leading-7 font-medium">
               We bring brands and people closer. With a focus on
               emotion-driven connections, we craft experiences that resonate
               and endure.
             </p>
-            <div className="hidden sm:block">
-              <HGFRJh />
+            <div className="mt-3 flex gap-4 md:gap-10 flex-col items-center sm:flex-row">
+              <NavLink to="/about-us">
+                <button
+                  className="px-7 text-md md:text-[16px] md:px-8 py-4 text-white rounded-lg from-blue-400 to-blue-600 bg-gradient-to-l hover:from-blue-500 hover:to-blue-700 active:scale-95 flex gap-1 items-center justify-center w-fit min-w-[200px]"
+                  title="Click here to learn more"
+                >
+                  Learn more <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
+                  </svg>
+
+                </button>
+              </NavLink>
+              <NavLink to="/services/">
+                <button
+                  className="text-sm md:text-[16px] dark:text-white bg-transparent border-b border-blue-500 hover:scale-95 w-fit"
+                  title="Click here to compare our plans"
+                >
+                  Find your service &rarr;
+                </button>
+              </NavLink>
             </div>
           </div>
 
@@ -132,9 +128,6 @@ export default function Home() {
                   </svg>
                 )}
               </button>
-            </div>
-            <div className="block sm:hidden mt-8">
-              <HGFRJh />
             </div>
           </div>
         </div>

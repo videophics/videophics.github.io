@@ -8,7 +8,7 @@ export default function Layout({ children, theme, setTheme }) {
     }, [children]);
 
     return (
-        <main className="bg-white dark:bg-body-dark">
+        <main className="bg-background dark:bg-background-dark">
             <Navbar theme={theme} setTheme={setTheme} />
             <div className="min-h-screen" role="main">
                 {children}

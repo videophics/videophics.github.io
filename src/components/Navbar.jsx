@@ -6,7 +6,19 @@ export default function Navbar({ theme, setTheme }) {
 
   const ServicesList = ({ mobile }) => (
     <>
-      <Link className="w-fit" to="/services/branding">
+      <Link className="w-fit hover:text-slate-light dark:hover:text-slate" to="/services">
+        <li
+          className={
+            !mobile
+              ? "border-b-[2px] border-transparent hover:border-blue-700 dark:hover:border-blue-500"
+              : "border-b-[2px] border-transparent dark:hover:border-blue-500"
+          }
+        >
+          <p className={mobile && "hidden"}>Overview</p>
+          <p className="_hover">Overview</p>
+        </li>
+      </Link>
+      <Link className="w-fit hover:text-slate-light dark:hover:text-slate" to="/services/branding">
         <li
           className={
             !mobile
@@ -19,7 +31,7 @@ export default function Navbar({ theme, setTheme }) {
           <p className="_hover">Branding</p>
         </li>
       </Link>
-      <Link className="w-fit" to="/services/development">
+      <Link className="w-fit hover:text-slate-light dark:hover:text-slate" to="/services/development">
         <li
           className="border-b-[2px] border-transparent hover:border-blue-700 dark:hover:border-blue-500"
           index="3"
@@ -28,7 +40,7 @@ export default function Navbar({ theme, setTheme }) {
           <p className="_hover">Development</p>
         </li>
       </Link>
-      <Link className="w-fit" to="/services/brand-advisory">
+      <Link className="w-fit hover:text-slate-light dark:hover:text-slate" to="/services/brand-advisory">
         <li
           className="border-b-[2px] border-transparent hover:border-blue-700 dark:hover:border-blue-500"
           index="2"
@@ -37,7 +49,7 @@ export default function Navbar({ theme, setTheme }) {
           <p className="_hover">Brand Advisory</p>
         </li>
       </Link>
-      <Link className="w-fit" to="/services/marketing">
+      <Link className="w-fit hover:text-slate-light dark:hover:text-slate" to="/services/marketing">
         <li
           className="border-b-[2px] border-transparent hover:border-blue-700 dark:hover:border-blue-500"
           index="4"
@@ -46,7 +58,7 @@ export default function Navbar({ theme, setTheme }) {
           <p className="_hover">Marketing</p>
         </li>
       </Link>
-      <Link className="w-fit" to="/services/content-writing">
+      <Link className="w-fit hover:text-slate-light dark:hover:text-slate" to="/services/content-writing">
         <li
           className="border-b-[2px] border-transparent hover:border-blue-700 dark:hover:border-blue-500"
           index="5"
@@ -55,7 +67,7 @@ export default function Navbar({ theme, setTheme }) {
           <p className="_hover">Content Writing</p>
         </li>
       </Link>
-      <Link className="w-fit" to="/services/software-testing">
+      <Link className="w-fit hover:text-slate-light dark:hover:text-slate" to="/services/software-testing">
         <li
           className="border-b-[2px] border-transparent hover:border-blue-700 dark:hover:border-blue-500"
           index="6"
@@ -68,17 +80,13 @@ export default function Navbar({ theme, setTheme }) {
   );
   const Menu = () => (
     <>
-      <li>
-        <NavLink to="/">Home</NavLink>
-      </li>
       <li
-        className="relative"
+        className="relative select-none"
         onMouseLeave={hideServiceMenu}
       >
-        <NavLink
-          to="/services"
+        <a
           id="navServiceMenuItem"
-          className="hidden lg:block"
+          className="hidden lg:block hover:text-slate-light dark:hover:text-slate hover:bg-gray-300/25 dark:hover:bg-gray-400/5"
           onMouseEnter={() => {
             document
               .querySelector("._services-menu")
@@ -97,8 +105,7 @@ export default function Navbar({ theme, setTheme }) {
             fill="none"
             viewBox="0 0 24 24"
             strokeWidth={2}
-            stroke="currentColor"
-            className="w-4 h-4 inline-block"
+            className="w-4 h-4 inline-block stroke-gray-400 dark:stroke-gray-400"
           >
             <path
               strokeLinecap="round"
@@ -106,7 +113,7 @@ export default function Navbar({ theme, setTheme }) {
               d="M19 9l-7 7-7-7"
             />
           </svg>
-        </NavLink>
+        </a>
         <button
           className="lg:hidden"
           onClick={() => {
@@ -121,8 +128,7 @@ export default function Navbar({ theme, setTheme }) {
             fill="none"
             viewBox="0 0 24 24"
             strokeWidth={2}
-            stroke="currentColor"
-            className="w-4 h-4 inline-block"
+            className="w-4 h-4 inline-block stroke-gray-400 dark:stroke-gray-500"
           >
             <path
               strokeLinecap="round"
@@ -149,13 +155,13 @@ export default function Navbar({ theme, setTheme }) {
           </ol>
         </div>
       </li>
-      <li>
+      <li className="select-none hover:text-slate-light dark:hover:text-slate g:hover:blg-gray-300/25 lg:dark:hover:bg-gray-400/5">
         <NavLink to="/about-us">About Us</NavLink>
       </li>
-      <li>
+      <li className="select-none hover:text-slate-light dark:hover:text-slate lg:hover:bg-gray-300/25 lg:dark:hover:bg-gray-400/5">
         <NavLink to="/blog">Blog</NavLink>
       </li>
-      <li className="block lg:hidden">
+      <li className="select-none block lg:hidden hover:text-slate-light dark:hover:text-slate lg;hover:bg-gray-300/25 lg:dark:hover:bg-gray-400/5">
         <a href="/#contact">Contact Us</a>
       </li>
     </>
@@ -323,10 +329,10 @@ export default function Navbar({ theme, setTheme }) {
         </div>
       </div>
       <nav
-        className="_navbar sticky top-0 left-0 z-50 py-4 lg:p-0 text-black dark:text-white border-b border-[#cecece] bg-blue-50/90 backdrop-blur-lg dark:bg-gray-800/80 dark:border-gray-700"
+        className="_navbar sticky top-0 left-0 z-50 py-4 lg:p-0 text-black dark:text-white border-b border-[#cecece] bg-blue-50/90 backdrop-blur-lg bg-navbar dark:bg-navbar-dark/80 dark:border-gray-500/70"
         role="navigation"
       >
-        <div className="container mx-auto flex justify-between lg:grid grid-cols-3 gap-4">
+        <div className="container mx-auto flex justify-between gap-4">
           <div className="_logo flex items-center">
             <NavLink to="/">
               <h1 className="font-bold text-lg flex items-center">
@@ -338,13 +344,13 @@ export default function Navbar({ theme, setTheme }) {
                 <span>Videophics</span>
               </h1>
             </NavLink>
+            <ol
+              className="_menu ml-7 text-sm items-center hidden lg:flex"
+              onClick={hideServiceMenu}
+            >
+              <Menu />
+            </ol>
           </div>
-          <ol
-            className="_menu text-sm items-center hidden lg:flex"
-            onClick={hideServiceMenu}
-          >
-            <Menu />
-          </ol>
           <div className="flex gap-5 md:gap-4 justify-end items-center">
             <NavLink
               to="/contact-us"

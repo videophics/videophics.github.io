@@ -31,14 +31,9 @@ export default function App() {
     if (theme === "dark") {
       document.documentElement.classList.add("dark");
       localStorage.setItem("theme", "dark");
-      document.documentElement.style.setProperty(
-        "--bg-secondary-1",
-        "#6a8ddd"
-      );
     } else {
       document.documentElement.classList.remove("dark");
       localStorage.setItem("theme", "light");
-      document.documentElement.style.setProperty("--bg-secondary-1", "#4266bd");
     }
     return () => { };
   }, [theme]);
