@@ -9,6 +9,8 @@ export default {
   },
   extend: {
    colors: {
+    primary: "#E5B808",
+    secondary: "#0a52a6",
     background: {
      DEFAULT: "#FFFFFF",
      dark: "#313131",
@@ -17,8 +19,6 @@ export default {
      DEFAULT: "#FBFBFB",
      dark: "#444",
     },
-    primary: "#E5B808",
-    secondary: "#0a52a6",
     slate: {
      DEFAULT: "#BDC3C7",
      light: "#777",

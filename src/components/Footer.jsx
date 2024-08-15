@@ -8,11 +8,7 @@ function Footer() {
             <h1 className="font-[500] text-xl">Videophics</h1>
           </div>
           <p className="text-sm leading-6 mt-4 dark:text-gray-300">
-            Videophics is a graphic design agency dedicated to empowering
-            brands, businesses, and individuals through impactful visual
-            storytelling. We craft compelling designs for a wide range of
-            clients, including companies, organizations, publications, and
-            personal promotions.
+            Videophics is a leading branding agency dedicated to empowering your brand's growth and success. Through our expertise in emotion-driven storytelling and strategic branding, we create enduring experiences that resonate with your audience.
           </p>
           <button className="text-gray-800 dark:text-white bg-white dark:bg-blue-700 dark:bg-blue-700 dark:text-white rounded-full px-6 py-3 mt-6 text-sm flex gap-2">
             Company Deck
