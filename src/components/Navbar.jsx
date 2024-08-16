@@ -289,7 +289,7 @@ export default function Navbar() {
       </div>
       <div className="_nav-section sticky top-0 left-0 z-50">
         <nav
-          className="_navbar py-4 lg:p-0 text-white bg-gradient-to-r from-[#28292d] to-[#4f4f50] border-b border-gray-600/65 shadow-md"
+          className="_navbar py-3.5 lg:p-0 text-white bg-gradient-to-r from-[#28292d] to-[#4f4f50] border-b border-gray-600/65 shadow-md"
           role="navigation"
         >
           <div className="container mx-auto flex justify-between gap-4">
@@ -306,7 +306,7 @@ export default function Navbar() {
               </NavLink>
             </div>
             <ol
-              className="_menu ml-7 text-sm items-center hidden lg:flex"
+              className="_menu ml-7 text-md items-center hidden lg:flex"
               onClick={hideServiceMenu}
             >
               <Menu />
