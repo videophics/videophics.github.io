@@ -270,92 +270,92 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <div className="bg-yellow-light/10 py-[4rem]">
-        <section className="_clients-section pb-[4rem] flex flex-col justify-center items-center pt-[4rem]">
+      <div className="bg-silver-light/5 py-[5rem]">
+        <section className="_clients-section pb-[4rem] flex flex-col justify-center items-center">
           <Clients />
         </section>
         <div className="container mx-auto max-w-[1300px]">
           <section
             id="booking"
-            className="_booking-section py-12 md:py-[6.5rem] bg-gray-900 flex flex-col justify-center items-center rounded-lg"
+            className="_booking-section py-12 md:py-[6.5rem] bg-yellow-light/5 flex flex-col justify-center items-center rounded-lg"
           >
             <Booking />
           </section>
         </div>
-        <section
-          className="_faq-section py-[8rem] pb-[3rem] md:min-h-[calc(100vh-80px)] flex flex-col justify-center items-center"
-          id="faq"
-        >
-          <div className="container mx-auto max-w-[1300px]">
-            <div className="text-center">
-              <h3 className="text-3xl lg:text-4xl font-[600] text-white leading-10">
-                Frequently Asked Questions
-              </h3>
-              <p className="text-[14px] mt-4 md:text-[17px] text-gray-400 leading-6 md:leading-7 mb-8">
-                Can't find what you're looking for? Reach out to our{" "}
-                <a
-                  className="text-blue-400"
-                  href="/support"
-                >
-                  support team
-                </a>
-                .
-              </p>
-            </div>
-            <div className="flex justify-center">
-              <div className="max-w-[500px] md:max-w-[700px] pt-[3rem]">
-                <Collapsible title="What is your refund policy?">
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Atque, veniam excepturi sequi eius libero dolorem impedit
-                    dolores natus cum, a nostrum illum minima! Doloremque
-                    architecto cum expedita dolorem porro culpa.
-                  </p>
-                </Collapsible>
-                <Collapsible title="How do I cancel my subscription?">
-                  <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Aut, neque tenetur repellat obcaecati illum autem officiis
-                    odit excepturi exercitationem repudiandae atque unde nemo,
-                    corporis ratione saepe vitae, eveniet nesciunt beatae.
-                  </p>
-                </Collapsible>
-                <Collapsible title="How do I cancel my subscription?">
-                  <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Eum vitae neque quidem, in architecto a nam, atque
-                    doloribus eos sequi molestias cumque quo dignissimos
-                    culpa, omnis maiores repudiandae amet dolorum?
-                  </p>
-                </Collapsible>
-                <Collapsible title="Can I upgrade my plan?">
-                  <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Et libero cupiditate suscipit nisi ipsum quae distinctio
-                    quos architecto cum placeat eum quia, reprehenderit alias
-                    officia accusamus dolores recusandae dolore. Delectus.
-                  </p>
-                </Collapsible>
-                <Collapsible title="Can I upgrade my plan?">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Voluptates qui fugit provident vitae unde obcaecati
-                    blanditiis error quo in consequatur aperiam, quis
-                    quibusdam ad quidem dolor explicabo dignissimos facilis
-                    odio!
-                  </p>
-                </Collapsible>
-              </div>
-            </div>
-          </div>
-        </section>
       </div>
       <section
-        className="_contact-section bg-transparent py-[8rem] flex flex-col justify-center items-center"
+        className="_contact-section bg-transparent pt-[8rem] flex flex-col justify-center items-center mb-4"
         id="contact"
       >
         <div className="container mx-auto max-w-[1300px] grid md:grid-cols-2 gap-10">
           <Contact />
+        </div>
+      </section>
+      <section
+        className="_faq-section py-[8rem] pb-[4rem] md:min-h-[calc(100vh-80px)] flex flex-col justify-center items-center"
+        id="faq"
+      >
+        <div className="container mx-auto max-w-[1300px]">
+          <div className="text-center">
+            <h3 className="text-3xl lg:text-4xl font-[600] text-white leading-10">
+              Frequently Asked Questions
+            </h3>
+            <p className="text-[14px] mt-4 md:text-[17px] text-gray-400 leading-6 md:leading-7 mb-8">
+              Can't find what you're looking for? Reach out to our{" "}
+              <a
+                className="text-primary"
+                href="/support"
+              >
+                support team
+              </a>
+              .
+            </p>
+          </div>
+          <div className="flex justify-center">
+            <div className="max-w-[500px] md:max-w-[700px] pt-[3rem]">
+              <Collapsible title="What is your refund policy?">
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Atque, veniam excepturi sequi eius libero dolorem impedit
+                  dolores natus cum, a nostrum illum minima! Doloremque
+                  architecto cum expedita dolorem porro culpa.
+                </p>
+              </Collapsible>
+              <Collapsible title="How do I cancel my subscription?">
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Aut, neque tenetur repellat obcaecati illum autem officiis
+                  odit excepturi exercitationem repudiandae atque unde nemo,
+                  corporis ratione saepe vitae, eveniet nesciunt beatae.
+                </p>
+              </Collapsible>
+              <Collapsible title="How do I cancel my subscription?">
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Eum vitae neque quidem, in architecto a nam, atque
+                  doloribus eos sequi molestias cumque quo dignissimos
+                  culpa, omnis maiores repudiandae amet dolorum?
+                </p>
+              </Collapsible>
+              <Collapsible title="Can I upgrade my plan?">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Et libero cupiditate suscipit nisi ipsum quae distinctio
+                  quos architecto cum placeat eum quia, reprehenderit alias
+                  officia accusamus dolores recusandae dolore. Delectus.
+                </p>
+              </Collapsible>
+              <Collapsible title="Can I upgrade my plan?">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptates qui fugit provident vitae unde obcaecati
+                  blanditiis error quo in consequatur aperiam, quis
+                  quibusdam ad quidem dolor explicabo dignissimos facilis
+                  odio!
+                </p>
+              </Collapsible>
+            </div>
+          </div>
         </div>
       </section>
     </div>

@@ -17,7 +17,7 @@ const Collapsible = ({ title, children }) => {
   const currentHeight = isExpanded ? height : 0;
   return (
     <div className={classes} onClick={handleToggle}>
-      <div className="flex flex-col gap-2 mb-3 border-b border-gray-700">
+      <div className="flex flex-col gap-2 mb-3 border-b border-gray-600/70">
         <button className="text-xl font-[500] text-white text-left _collapsible flex">
           {title + " "}
           <span className="inline-block w-fit ml-auto">&rarr;</span>

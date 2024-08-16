@@ -23,24 +23,24 @@ export default function Contact() {
                 />
               </svg>
             </span>{" "}
-            <span className="text-blue-400">
+            <span className="text-gray-400">
               contact@videophics.com
             </span>
           </p>
           <p className="leading-6 mt-6">
-            <span className="text-blue-400">
+            <span className="text-gray-400">
               Office Hours:
             </span>{" "}
             9:00 AM - 9:00 PM (GMT+6)
           </p>
           <p className="leading-6">
-            <span className="text-blue-400">
+            <span className="text-gray-400">
               Address:
             </span>{" "}
             Dhaka, Bangladesh
           </p>
           <p className="leading-6">
-            <span className="text-blue-400">
+            <span className="text-gray-400">
               Facebook:
             </span>{" "}
             https://facebook.com/videophics
@@ -50,7 +50,6 @@ export default function Contact() {
           src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&amp;q=Dhaka, Bangladesh"
           width="600"
           height="278"
-          frameBorder="0"
           style={{ width: "100%", marginTop: "2rem" }}
           allowFullScreen=""
         ></iframe>
@@ -84,7 +83,7 @@ export default function Contact() {
             <input
               type="text"
               id="name"
-              className="p-3 rounded-md border-2 focus:outline-none focus:border-blue-500 bg-yellow-light/10 text-white border-gray-500"
+              className="p-3 rounded-md border-2 focus:outline-none focus:border-blue-500 bg-background text-white border-gray-600"
               placeholder="Abdullah"
             />
           </div>
@@ -99,7 +98,7 @@ export default function Contact() {
               <input
                 type="text"
                 id="company"
-                className="p-3 rounded-md border-2 focus:outline-none focus:border-blue-500 bg-yellow-light/10 text-white border-gray-500"
+                className="p-3 rounded-md border-2 focus:outline-none focus:border-blue-500 bg-background text-white border-gray-600"
                 placeholder="Example Inc."
                 required
               />
@@ -114,7 +113,7 @@ export default function Contact() {
               <input
                 type="email"
                 id="email"
-                className="p-3 rounded-md border-2 focus:outline-none focus:border-blue-500 bg-yellow-light/10 text-white border-gray-500"
+                className="p-3 rounded-md border-2 focus:outline-none focus:border-blue-500 bg-background text-white border-gray-600"
                 placeholder="contact@example.com"
                 required
               />
@@ -127,7 +126,7 @@ export default function Contact() {
                 Select Service *
               </label>
               <select
-                className="p-3 rounded-md border-2 bg-white focus:outline-none focus:border-blue-500 bg-yellow-light/10 text-white border-gray-500"
+                className="p-3 rounded-md border-2 focus:outline-none focus:border-blue-500 bg-background text-white border-gray-600"
                 id="service"
                 required
               >
@@ -147,7 +146,7 @@ export default function Contact() {
                 Budget Range *
               </label>
               <select
-                className="p-3 rounded-md border-2 bg-white focus:outline-none focus:border-blue-500 bg-yellow-light/10 text-white border-gray-500"
+                className="p-3 rounded-md border-2 focus:outline-none focus:border-blue-500 bg-background text-white border-gray-600"
                 id="range"
                 required
               >
@@ -167,7 +166,7 @@ export default function Contact() {
             </label>
             <textarea
               id="message"
-              className="p-3 rounded-md border-2 focus:outline-none focus:border-blue-500 bg-yellow-light/10 text-white border-gray-500"
+              className="p-3 rounded-md border-2 focus:outline-none focus:border-blue-500 bg-background text-white border-gray-600"
               placeholder="Your project details"
               required
             />
