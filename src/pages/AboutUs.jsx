@@ -22,7 +22,7 @@ export default function AboutUs() {
         <img
           src="/images/static/aboutView.webp"
           alt="Branding"
-          className="w-full h-96 object-cover mt-10 rounded-md bg-orange-light/10"
+          className="w-full h-96 object-cover mt-10 rounded-md bg-yellow-light/10"
         />
         <p className="mt-10 text-lg leading-relaxed">
           Videophics is a branding agency that helps businesses grow

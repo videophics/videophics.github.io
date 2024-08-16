@@ -10,13 +10,14 @@ export default {
   extend: {
    colors: {
     primary: "#E5B808",
-    secondary: "rgb(59 130 246)",
     background: "#212121",
     navbar: "#444444",
-    "slate-light": "#BDC3C7",
+    "silver-light": "#BDC3C7",
     "gray-light": "#FFFCFE",
-    "orange-light": "#FFFFC5",
-    "dark-blue": "#410AC2"
+    "yellow-light": "#FFFFC5",
+    "dark-blue": "#410AC2",
+    "dark-orange": "#ff9d2f",
+    "blue-light": "#3b82f6",
    },
    lineHeight: {
     13: "3.5rem",

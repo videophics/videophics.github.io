@@ -466,7 +466,7 @@ function BlogEdit() {
             ) : (
               <div className="mt-12 flex flex-col lg:flex-row justify-center items-center lg:items-start gap-12">
                 <form
-                  className="bg-orange-light/10 shadow-md rounded-md p-8 w-full h-fit max-w-[700px]"
+                  className="bg-yellow-light/10 shadow-md rounded-md p-8 w-full h-fit max-w-[700px]"
                   onSubmit={(e) => {
                     e.preventDefault();
                   }}

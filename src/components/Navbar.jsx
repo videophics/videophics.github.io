@@ -80,7 +80,7 @@ export default function Navbar() {
   );
   const Menu = () => (
     <>
-      <li className="select-none hover:text-slate-light lg:hover:bg-gray-400/5">
+      <li className="select-none hover:text-silver-light lg:hover:bg-gray-400/5">
         <NavLink to="/">Home</NavLink>
       </li>
       <li
@@ -89,7 +89,7 @@ export default function Navbar() {
       >
         <a
           id="navServiceMenuItem"
-          className="hidden lg:block hover:text-slate-light hover:bg-gray-400/5"
+          className="hidden lg:block hover:text-silver-light hover:bg-gray-400/5"
           onMouseEnter={() => {
             document
               .querySelector("._services-menu")
@@ -158,13 +158,13 @@ export default function Navbar() {
           </ol>
         </div>
       </li>
-      <li className="select-none hover:text-slate-light lg:hover:bg-gray-400/5">
+      <li className="select-none hover:text-silver-light lg:hover:bg-gray-400/5">
         <NavLink to="/about-us">About Us</NavLink>
       </li>
-      <li className="select-none hover:text-slate-light lg:hover:bg-gray-400/5">
+      <li className="select-none hover:text-silver-light lg:hover:bg-gray-400/5">
         <NavLink to="/blog">Blog</NavLink>
       </li>
-      <li className="select-none block lg:hidden hover:text-slate-light lg:hover:bg-gray-400/5">
+      <li className="select-none block lg:hidden hover:text-silver-light lg:hover:bg-gray-400/5">
         <a href="/#contact">Contact Us</a>
       </li>
     </>
@@ -234,11 +234,6 @@ export default function Navbar() {
         });
       });
     });
-    if (!document.getElementById("homepage")) {
-      document.querySelector("._ad").style.display = "none";
-    } else {
-      document.querySelector("._ad").style.display = "block";
-    }
 
     const i = setInterval(() => {
       initOffer();
@@ -324,7 +319,7 @@ export default function Navbar() {
                 Contact Us
               </NavLink>
               <button
-                className="p-2 rounded-full active:scale-95 block lg:hidden active:bg-orange-light/10 text-white"
+                className="p-2 rounded-full active:scale-95 block lg:hidden active:bg-yellow-light/10 text-white"
                 onClick={() => {
                   document
                     .querySelector("._drawer-menu-layer")

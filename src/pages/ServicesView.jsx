@@ -44,7 +44,7 @@ const Branding = () => {
                 className="w-full object-cover rounded-t-md mx-auto bg-gray-300 bg-gray-500"
                 style={{ aspectRatio: "3/2" }}
               />
-              <div className="bg-orange-light/10 p-6 rounded-b-md">
+              <div className="bg-yellow-light/10 p-6 rounded-b-md">
                 <h3 className="text-2xl font-semibold">Logo Design</h3>
                 <p className="mt-3 text-gray-400">
                   Create a memorable logo to represent your brand across all
@@ -59,7 +59,7 @@ const Branding = () => {
                 className="w-full object-cover rounded-t-md mx-auto bg-gray-300 bg-gray-500"
                 style={{ aspectRatio: "3/2" }}
               />
-              <div className="bg-orange-light/10 p-6 rounded-b-md">
+              <div className="bg-yellow-light/10 p-6 rounded-b-md">
                 <h3 className="text-2xl font-semibold">Brand Messaging</h3>
                 <p className="mt-3 text-gray-400">
                   Develop a unique brand voice that resonates with your
@@ -74,7 +74,7 @@ const Branding = () => {
                 className="w-full object-cover rounded-t-md mx-auto bg-gray-300 bg-gray-500"
                 style={{ aspectRatio: "3/2" }}
               />
-              <div className="bg-orange-light/10 p-6 rounded-b-md">
+              <div className="bg-yellow-light/10 p-6 rounded-b-md">
                 <h3 className="text-2xl font-semibold">
                   Social Media Branding
                 </h3>
@@ -91,7 +91,7 @@ const Branding = () => {
                 className="w-full object-cover rounded-t-md mx-auto bg-gray-300 bg-gray-500"
                 style={{ aspectRatio: "3/2" }}
               />
-              <div className="bg-orange-light/10 p-6 rounded-b-md">
+              <div className="bg-yellow-light/10 p-6 rounded-b-md">
                 <h3 className="text-2xl font-semibold">UI/UX Design</h3>
                 <p className="mt-3 text-gray-400">
                   Create a visually appealing and user-friendly interface
@@ -106,7 +106,7 @@ const Branding = () => {
                 className="w-full object-cover rounded-t-md mx-auto bg-gray-300 bg-gray-500"
                 style={{ aspectRatio: "3/2" }}
               />
-              <div className="bg-orange-light/10 p-6 rounded-b-md">
+              <div className="bg-yellow-light/10 p-6 rounded-b-md">
                 <h3 className="text-2xl font-semibold">Web Design</h3>
                 <p className="mt-3 text-gray-400">
                   Build a stunning website that is easy to navigate and use.
@@ -120,7 +120,7 @@ const Branding = () => {
                 className="w-full object-cover rounded-t-md mx-auto bg-gray-300 bg-gray-500"
                 style={{ aspectRatio: "3/2" }}
               />
-              <div className="bg-orange-light/10 p-6 rounded-b-md">
+              <div className="bg-yellow-light/10 p-6 rounded-b-md">
                 <h3 className="text-2xl font-semibold">Graphic Design</h3>
                 <p className="mt-3 text-gray-400">
                   Create visually appealing graphics for your website and
@@ -174,7 +174,7 @@ const BrandAdvisory = () => {
                 className="w-full object-cover rounded-t-md mx-auto bg-gray-300 bg-gray-500"
                 style={{ aspectRatio: "3/2" }}
               />
-              <div className="bg-orange-light/10 p-6 rounded-b-md">
+              <div className="bg-yellow-light/10 p-6 rounded-b-md">
                 <h3 className="text-2xl font-semibold">Brand Consulting</h3>
                 <p className="mt-3 text-gray-400">
                   Get expert advice on building and growing your brand with
@@ -189,7 +189,7 @@ const BrandAdvisory = () => {
                 className="w-full object-cover rounded-t-md mx-auto bg-gray-300 bg-gray-500"
                 style={{ aspectRatio: "3/2" }}
               />
-              <div className="bg-orange-light/10 p-6 rounded-b-md">
+              <div className="bg-yellow-light/10 p-6 rounded-b-md">
                 <h3 className="text-2xl font-semibold">Brand Strategy</h3>
                 <p className="mt-3 text-gray-400">
                   Develop a comprehensive brand strategy that defines your
@@ -204,7 +204,7 @@ const BrandAdvisory = () => {
                 className="w-full object-cover rounded-t-md mx-auto bg-gray-300 bg-gray-500"
                 style={{ aspectRatio: "3/2" }}
               />
-              <div className="bg-orange-light/10 p-6 rounded-b-md">
+              <div className="bg-yellow-light/10 p-6 rounded-b-md">
                 <h3 className="text-2xl font-semibold">Brand Messaging</h3>
                 <p className="mt-3 text-gray-400">
                   Develop a compelling brand story that resonates with your
@@ -258,7 +258,7 @@ const Development = () => {
                 className="w-full object-cover rounded-t-md mx-auto bg-gray-300 bg-gray-500"
                 style={{ aspectRatio: "3/2" }}
               />
-              <div className="bg-orange-light/10 p-6 rounded-b-md">
+              <div className="bg-yellow-light/10 p-6 rounded-b-md">
                 <h3 className="text-2xl font-semibold">
                   Frontend Development
                 </h3>
@@ -275,7 +275,7 @@ const Development = () => {
                 className="w-full object-cover rounded-t-md mx-auto bg-gray-300 bg-gray-500"
                 style={{ aspectRatio: "3/2" }}
               />
-              <div className="bg-orange-light/10 p-6 rounded-b-md">
+              <div className="bg-yellow-light/10 p-6 rounded-b-md">
                 <h3 className="text-2xl font-semibold">
                   Backend Development
                 </h3>
@@ -292,7 +292,7 @@ const Development = () => {
                 className="w-full object-cover rounded-t-md mx-auto bg-gray-300 bg-gray-500"
                 style={{ aspectRatio: "3/2" }}
               />
-              <div className="bg-orange-light/10 p-6 rounded-b-md">
+              <div className="bg-yellow-light/10 p-6 rounded-b-md">
                 <h3 className="text-2xl font-semibold">API Development</h3>
                 <p className="mt-3 text-gray-400">
                   Build custom APIs to connect your website or app to
@@ -346,7 +346,7 @@ const Marketing = () => {
                 className="w-full object-cover rounded-t-md mx-auto bg-gray-300 bg-gray-500"
                 style={{ aspectRatio: "3/2" }}
               />
-              <div className="bg-orange-light/10 p-6 rounded-b-md">
+              <div className="bg-yellow-light/10 p-6 rounded-b-md">
                 <h3 className="text-2xl font-semibold">SEO</h3>
                 <p className="mt-3 text-gray-400">
                   Improve your website's search engine rankings and
@@ -361,7 +361,7 @@ const Marketing = () => {
                 className="w-full object-cover rounded-t-md mx-auto bg-gray-300 bg-gray-500"
                 style={{ aspectRatio: "3/2" }}
               />
-              <div className="bg-orange-light/10 p-6 rounded-b-md">
+              <div className="bg-yellow-light/10 p-6 rounded-b-md">
                 <h3 className="text-2xl font-semibold">
                   Social Media Marketing
                 </h3>
@@ -378,7 +378,7 @@ const Marketing = () => {
                 className="w-full object-cover rounded-t-md mx-auto bg-gray-300 bg-gray-500"
                 style={{ aspectRatio: "3/2" }}
               />
-              <div className="bg-orange-light/10 p-6 rounded-b-md">
+              <div className="bg-yellow-light/10 p-6 rounded-b-md">
                 <h3 className="text-2xl font-semibold">
                   Content Marketing
                 </h3>
@@ -434,7 +434,7 @@ const ContentWriting = () => {
                 className="w-full object-cover rounded-t-md mx-auto bg-gray-300 bg-gray-500"
                 style={{ aspectRatio: "3/2" }}
               />
-              <div className="bg-orange-light/10 p-6 rounded-b-md">
+              <div className="bg-yellow-light/10 p-6 rounded-b-md">
                 <h3 className="text-2xl font-semibold">Blog Writing</h3>
                 <p className="mt-3 text-gray-400">
                   Create engaging blog posts that attract and inform your
@@ -449,7 +449,7 @@ const ContentWriting = () => {
                 className="w-full object-cover rounded-t-md mx-auto bg-gray-300 bg-gray-500"
                 style={{ aspectRatio: "3/2" }}
               />
-              <div className="bg-orange-light/10 p-6 rounded-b-md">
+              <div className="bg-yellow-light/10 p-6 rounded-b-md">
                 <h3 className="text-2xl font-semibold">Copywriting</h3>
                 <p className="mt-3 text-gray-400">
                   Develop compelling copy that drives conversions and sales.
@@ -463,7 +463,7 @@ const ContentWriting = () => {
                 className="w-full object-cover rounded-t-md mx-auto bg-gray-300 bg-gray-500"
                 style={{ aspectRatio: "3/2" }}
               />
-              <div className="bg-orange-light/10 p-6 rounded-b-md">
+              <div className="bg-yellow-light/10 p-6 rounded-b-md">
                 <h3 className="text-2xl font-semibold">SEO Writing</h3>
                 <p className="mt-3 text-gray-400">
                   Write SEO-friendly content that ranks well in search
@@ -518,7 +518,7 @@ const SoftwareTesting = () => {
                   className="w-full object-cover rounded-t-md mx-auto bg-gray-300 bg-gray-500"
                   style={{ aspectRatio: "3/2" }}
                 />
-                <div className="bg-orange-light/10 p-6 rounded-b-md">
+                <div className="bg-yellow-light/10 p-6 rounded-b-md">
                   <h3 className="text-2xl font-semibold">
                     Website Debugging
                   </h3>
@@ -535,7 +535,7 @@ const SoftwareTesting = () => {
                   className="w-full object-cover rounded-t-md mx-auto bg-gray-300 bg-gray-500"
                   style={{ aspectRatio: "3/2" }}
                 />
-                <div className="bg-orange-light/10 p-6 rounded-b-md">
+                <div className="bg-yellow-light/10 p-6 rounded-b-md">
                   <h3 className="text-2xl font-semibold">Code Refactoring</h3>
                   <p className="mt-3 text-gray-400">
                     Improve the structure and readability of your code for
@@ -550,7 +550,7 @@ const SoftwareTesting = () => {
                   className="w-full object-cover rounded-t-md mx-auto bg-gray-300 bg-gray-500"
                   style={{ aspectRatio: "3/2" }}
                 />
-                <div className="bg-orange-light/10 p-6 rounded-b-md">
+                <div className="bg-yellow-light/10 p-6 rounded-b-md">
                   <h3 className="text-2xl font-semibold">
                     Database Optimization
                   </h3>

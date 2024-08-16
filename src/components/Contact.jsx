@@ -84,7 +84,7 @@ export default function Contact() {
             <input
               type="text"
               id="name"
-              className="p-3 rounded-md border-2 focus:outline-none focus:border-blue-500 bg-orange-light/10 text-white border-gray-500"
+              className="p-3 rounded-md border-2 focus:outline-none focus:border-blue-500 bg-yellow-light/10 text-white border-gray-500"
               placeholder="Abdullah"
             />
           </div>
@@ -99,7 +99,7 @@ export default function Contact() {
               <input
                 type="text"
                 id="company"
-                className="p-3 rounded-md border-2 focus:outline-none focus:border-blue-500 bg-orange-light/10 text-white border-gray-500"
+                className="p-3 rounded-md border-2 focus:outline-none focus:border-blue-500 bg-yellow-light/10 text-white border-gray-500"
                 placeholder="Example Inc."
                 required
               />
@@ -114,7 +114,7 @@ export default function Contact() {
               <input
                 type="email"
                 id="email"
-                className="p-3 rounded-md border-2 focus:outline-none focus:border-blue-500 bg-orange-light/10 text-white border-gray-500"
+                className="p-3 rounded-md border-2 focus:outline-none focus:border-blue-500 bg-yellow-light/10 text-white border-gray-500"
                 placeholder="contact@example.com"
                 required
               />
@@ -127,7 +127,7 @@ export default function Contact() {
                 Select Service *
               </label>
               <select
-                className="p-3 rounded-md border-2 bg-white focus:outline-none focus:border-blue-500 bg-orange-light/10 text-white border-gray-500"
+                className="p-3 rounded-md border-2 bg-white focus:outline-none focus:border-blue-500 bg-yellow-light/10 text-white border-gray-500"
                 id="service"
                 required
               >
@@ -147,7 +147,7 @@ export default function Contact() {
                 Budget Range *
               </label>
               <select
-                className="p-3 rounded-md border-2 bg-white focus:outline-none focus:border-blue-500 bg-orange-light/10 text-white border-gray-500"
+                className="p-3 rounded-md border-2 bg-white focus:outline-none focus:border-blue-500 bg-yellow-light/10 text-white border-gray-500"
                 id="range"
                 required
               >
@@ -167,7 +167,7 @@ export default function Contact() {
             </label>
             <textarea
               id="message"
-              className="p-3 rounded-md border-2 focus:outline-none focus:border-blue-500 bg-orange-light/10 text-white border-gray-500"
+              className="p-3 rounded-md border-2 focus:outline-none focus:border-blue-500 bg-yellow-light/10 text-white border-gray-500"
               placeholder="Your project details"
               required
             />

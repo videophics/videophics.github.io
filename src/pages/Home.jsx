@@ -46,7 +46,7 @@ export default function Home() {
               </span>{" "}
               your touchy stories
             </h1>
-            <p className="text-[14px] md:text-[17px] mt-4 mb-7 xl:px-10 text-slate-light leading-6 md:leading-7 font-medium">
+            <p className="text-[14px] md:text-[17px] mt-4 mb-7 xl:px-10 text-silver-light leading-6 md:leading-7 font-medium">
               We bring brands and people closer. With a focus on
               emotion-driven connections, we craft experiences that resonate
               and endure.
@@ -65,7 +65,7 @@ export default function Home() {
               </NavLink>
               <NavLink to="/services/">
                 <button
-                  className="text-sm md:text-[16px] text-white bg-transparent border-b border-secondary pb-0.5 hover:scale-95 w-fit"
+                  className="text-sm md:text-[16px] text-white bg-transparent border-b border-blue-light pb-0.5 hover:scale-95 w-fit"
                   title="Click here to compare our plans"
                 >
                   Find your service &rarr;
@@ -144,7 +144,7 @@ export default function Home() {
                 What makes us different from others in the industry.
               </p>
               <div className="grid md:grid-cols-3 gap-12">
-                <div className="flex flex-col bg-orange-light/10 p-6 rounded-lg h-full">
+                <div className="flex flex-col bg-yellow-light/10 p-6 rounded-lg h-full">
                   <img
                     src="/images/static/organic.png"
                     alt="Quality"
@@ -158,7 +158,7 @@ export default function Home() {
                     paid ads.
                   </p>
                 </div>
-                <div className="flex flex-col bg-orange-light/10 p-6 rounded-lg h-full">
+                <div className="flex flex-col bg-yellow-light/10 p-6 rounded-lg h-full">
                   <img
                     src="/images/static/emotion.png"
                     alt="Emotion"
@@ -172,7 +172,7 @@ export default function Home() {
                     and customer.
                   </p>
                 </div>
-                <div className="flex flex-col bg-orange-light/10 p-6 rounded-lg h-full">
+                <div className="flex flex-col bg-yellow-light/10 p-6 rounded-lg h-full">
                   <img
                     src="/images/static/story.png"
                     alt="Story"
@@ -270,7 +270,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <div className="bg-orange-light/10 py-[4rem]">
+      <div className="bg-yellow-light/10 py-[4rem]">
         <section className="_clients-section pb-[4rem] flex flex-col justify-center items-center pt-[4rem]">
           <Clients />
         </section>
