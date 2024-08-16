@@ -98,7 +98,7 @@ function WithAuth({ children }) {
           <h1 className="text-center text-white text-3xl font-[500] mt-10">
             Welcome to Admin Panel
           </h1>
-          <div className="_admin-account w-full max-w-[450px] mx-auto mt-8 text-white text-center">
+          <div className="_offer-sectionmin-account w-full max-w-[450px] mx-auto mt-8 text-white text-center">
             <button
               className="flex items-center justify-center bg-blue-500 hover:bg-blue-700 text-white font-[500] py-2 px-4 rounded mx-auto"
               onClick={loginProcess}

@@ -26,7 +26,7 @@ function Home() {
                 :-)
               </span>
             </h1>
-            <div className="_admin-account w-full max-w-[450px] mx-auto mt-5 text-white text-center">
+            <div className="_offer-sectionmin-account w-full max-w-[450px] mx-auto mt-5 text-white text-center">
               <p className="text-gray-400">
                 {user.email} (
                 <button
@@ -38,7 +38,7 @@ function Home() {
                 )
               </p>
             </div>
-            <div className="_admin-menu grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-12">
+            <div className="_offer-sectionmin-menu grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-12">
               <NavLink to="/admin/blog">
                 <div className="bg-yellow-light/10 shadow-md rounded-md p-6 hover:shadow-lg transition duration-300 hover:hover:bg-gray-700 cursor-pointer select-none">
                   <h2 className="text-white text-lg font-[500]">

@@ -192,7 +192,7 @@ export default function Navbar() {
 
 
     if (totalSeconds <= 0) {
-      document.querySelector("._ad > div").style.display = "none";
+      document.querySelector("._offer-section > div").style.display = "none";
     }
 
     const d = Math.floor(totalSeconds / 3600 / 24);
@@ -248,7 +248,7 @@ export default function Navbar() {
 
   return (
     <>
-      <div className="_ad w-full bg-gradient-to-l from-dark-blue to-primary z-20 py-2">
+      <div className="_offer-section w-full bg-gradient-to-l from-dark-blue to-primary z-20 py-2">
         <div className="container mx-auto max-w-[1300px] text-white flex flex-col sm:flex-row justify-center sm:items-center gap-2 sm:gap-6 text-sm md:text-md lg:text-2md flex-wrap hidden md:flex py-1">
           <div className="flex flex-wrap gap-1 md:gap-3">
             <p className="font-[600]">Black Friday Sale!</p>
@@ -287,9 +287,9 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-      <div className="nav-section sticky top-0 left-0 z-50">
+      <div className="_nav-section sticky top-0 left-0 z-50">
         <nav
-          className="_navbar py-4 lg:p-0 text-white backdrop-blur-lg bg-navbar/50 border-b border-gray-600/65 shadow-md"
+          className="_navbar py-4 lg:p-0 text-white bg-gradient-to-r from-[#28292d] to-[#4f4f50] border-b border-gray-600/65 shadow-md"
           role="navigation"
         >
           <div className="container mx-auto flex justify-between gap-4">

@@ -11,7 +11,6 @@ export default {
    colors: {
     primary: "#E5B808",
     background: "#212121",
-    navbar: "#444444",
     "silver-light": "#BDC3C7",
     "gray-light": "#FFFCFE",
     "yellow-light": "#FFFFC5",

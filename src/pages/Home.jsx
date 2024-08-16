@@ -33,7 +33,7 @@ export default function Home() {
         <div className="container mx-auto max-w-[1300px] flex flex-col gap-10 lg:items-center">
           <div className="flex flex-col justify-center md:items-center md:text-center z-10 max-w-[620px] lg:max-w-[750px] mx-auto lg:mx-0 md:py-10 min-h-[75vh]">
             <h1
-              className="text-2xl sm:text-4xl lg:text-[2.6rem] xl:text-[3rem] font-bold mb-4 text-white sm:leading-10 lg:leading-13"
+              className="text-3xl sm:text-4xl lg:text-[2.6rem] xl:text-[3rem] font-bold mb-4 text-white sm:leading-10 lg:leading-13"
               style={{
                 letterSpacing: "-0.03em",
               }}
