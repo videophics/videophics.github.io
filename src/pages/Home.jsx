@@ -30,6 +30,7 @@ export default function Home() {
         ></script>
       </Helmet>
       <section className="_hero-section relative py-10 lg:min-h-[calc(100vh-80px)] flex justify-center">
+        <div className="_gradient-circle-blurred absolute top-[35vh] right-0 w-[300px] h-[200px] rounded-full bg-gradient-to-br from-primary/50 to-transparent filter blur-[100px]"></div>
         <div className="container mx-auto max-w-[1300px] flex flex-col gap-10 lg:items-center">
           <div className="flex flex-col justify-center md:items-center md:text-center z-10 max-w-[620px] lg:max-w-[750px] mx-auto lg:mx-0 md:py-10 min-h-[75vh]">
             <h1
