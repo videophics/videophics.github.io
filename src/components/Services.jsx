@@ -4,12 +4,12 @@ export default function Services() {
   return (
     <>
       <div className="flex flex-col justify-center items-center text-center">
-        <p className="text-sm text-gray-400 leading-6 md:leading-7 uppercase">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-[600] text-white leading-8 md:leading-10">
           Our Services
-        </p>
-        <h1 className="text-2xl md:text-3xl lg:text-4xl font-[600] mb-4 text-white leading-8 md:leading-10 mt-2">
-          Growing Brands. Touching Souls.
         </h1>
+        <p className="text-sm md:text-md lg:text-xl text-gray-400 leading-6 md:leading-7 mt-3">
+          Growing Brands. Touching Souls.
+        </p>
       </div>
       <div className="_services-box mt-[4rem] grid md:grid-cols-2 gap-12">
         <div>

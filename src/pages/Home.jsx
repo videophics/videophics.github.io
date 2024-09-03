@@ -76,7 +76,7 @@ export default function Home() {
           </div>
 
           <div className="z-10 w-full">
-            <div className="bg-gray-700 rounded-lg relative md:max-w-[75%] mx-auto">
+            <div className="bg-gray-700 rounded-lg relative mx-auto">
               <video
                 src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
                 autoPlay
@@ -133,66 +133,64 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="_services-section py-[7rem] md:min-h-[calc(100vh-80px)]">
+      <section className="_services-section py-[4rem] md:min-h-[calc(100vh-80px)]">
         <div className="container mx-auto max-w-[1300px]">
           <Services />
           <div className="_unique-features pt-[10rem] flex flex-col gap-12">
             <div className="min-h-[40vh] flex flex-col justify-center">
-              <h3 className="text-3xl lg:text-4xl font-[600] text-white leading-10 text-center mb-2">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-[600] text-white leading-10 text-center mb-2">
                 Why Choose Us?
-              </h3>
-              <p className="text-[14px] md:text-[17px] text-gray-400 leading-6 md:leading-7 text-center mb-[4rem]">
+              </h1>
+              <p className="text-sm md:text-md lg:text-xl text-gray-400 leading-6 md:leading-7 text-center mt-3 mb-[4rem]">
                 What makes us different from others in the industry.
               </p>
-              <div className="grid md:grid-cols-3 gap-12">
-                <div className="flex flex-col bg-yellow-light/10 p-6 rounded-lg h-full">
-                  <img
-                    src="/images/static/organic.png"
-                    alt="Quality"
-                    className="w-16 h-16 mb-4"
-                  />
-                  <h4 className="text-xl font-[600] mb-2 text-white leading-8">
-                    Organic Reach
-                  </h4>
-                  <p className="text-sm text-gray-400 leading-6">
-                    We help you reach your audience organically without any
-                    paid ads.
-                  </p>
-                </div>
-                <div className="flex flex-col bg-yellow-light/10 p-6 rounded-lg h-full">
-                  <img
-                    src="/images/static/emotion.png"
-                    alt="Emotion"
-                    className="w-16 h-16 mb-4"
-                  />
-                  <h4 className="text-xl font-[600] mb-2 text-white leading-8">
-                    Emotional Connection
-                  </h4>
-                  <p className="text-sm text-gray-400 leading-6">
-                    We help you building emotional connection between brand
-                    and customer.
-                  </p>
-                </div>
-                <div className="flex flex-col bg-yellow-light/10 p-6 rounded-lg h-full">
-                  <img
-                    src="/images/static/story.png"
-                    alt="Story"
-                    className="w-16 h-16 mb-4"
-                  />
-                  <h4 className="text-xl font-[600] mb-2 text-white leading-8">
-                    Story Telling
-                  </h4>
-                  <p className="text-sm text-gray-400 leading-6">
-                    We help you finding the real connecting story of your
-                    brand.
-                  </p>
-                </div>
+              <div className="grid-flow-col gap-5 relative">
+                {[{ title: "Organic Reach", icon: "organic.png" }, { title: "Emotional Connection", icon: "emotion.png" }, { title: "Story Telling", icon: "story.png" }].map(
+                  (f, index) => (
+                    <div
+                      key={index}
+                      className="relative flex flex-col p-6 rounded-lg h-[40vh] md:h-[70vh] md:max-w-[100%] mx-auto mb-10 bg-cover bg-center group bg-yellow-light/10"
+                    >
+                      {/* Background Overlay */}
+                      <div className="absolute inset-0 bg-black opacity-10 group-hover:bg-black group-hover:opacity-30 transition duration-500"></div>
+
+                      {/* Bottom Left Content */}
+                      <div className="flex flex-col items-start gap-4 absolute left-[5%] bottom-[10%] md:left-[80px] md:bottom-[17%] md:opacity-0 md:group-hover:opacity-100 transition duration-500">
+                        <img
+                          src={`/images/static/${f.icon
+                            .toLowerCase()
+                            .replace(" ", "-")}`}
+                          alt={f.title}
+                          className="w-16 h-16 md:w-24 md:h-24"
+                        />
+                        <h1 className="text-3xl lg:text-5xl md:text-4xl font-bold text-white md:opacity-0 md:group-hover:opacity-100 transition duration-500">
+                          {f.title}
+                        </h1>
+                        <p className="text-md font-[500] lg:text-2xl md:text-xl text-gray-400 md:opacity-0 md:group-hover:opacity-100 transition duration-500 leading-6 mr-2">
+                          {index === 0 &&
+                            "We help you reach your audience organically without any paid ads."}
+                          {index === 1 &&
+                            "We help you build an emotional connection between brand and customer."}
+                          {index === 2 &&
+                            "We help you find the real connection story of your brand."}
+                        </p>
+                      </div>
+
+                      {/* Centered h1 */}
+                      <div className="flex justify-center items-center absolute inset-0 opacity-0 md:opacity-100 md:group-hover:opacity-0 transition duration-500">
+                        <h1 className="md:text-4xl lg:text-5xl font-bold text-white tracking-wide">
+                          {f.title}
+                        </h1>
+                      </div>
+                    </div>
+                  )
+                )}
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section className="_team-section bg-transparent py-[8rem] pt-[6rem] flex flex-col justify-center items-center">
+      {/*<section className="_team-section bg-transparent py-[8rem] pt-[6rem] flex flex-col justify-center items-center">
         <div className="container mx-auto max-w-[1300px]">
           <div className="text-center">
             <p className="text-sm text-gray-400 leading-6 md:leading-7 mb-2 uppercase">
@@ -270,7 +268,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section>*/}
       <div className="bg-silver-light/5 py-[5rem]">
         <section className="_clients-section pb-[4rem] flex flex-col justify-center items-center">
           <Clients />
