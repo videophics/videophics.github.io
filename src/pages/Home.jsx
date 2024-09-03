@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 /* Components */
 import Collapsible from "../components/Collapsible";
@@ -300,57 +300,28 @@ export default function Home() {
               Frequently Asked Questions
             </h3>
             <p className="text-[14px] mt-4 md:text-[17px] text-gray-400 leading-6 md:leading-7 mb-8">
-              Can't find what you're looking for? Reach out to our{" "}
-              <a
-                className="text-primary"
-                href="/support"
-              >
-                support team
-              </a>
-              .
+              Can't find what you're looking for? Book an appointment <a href="#booking" className="text-primary">here</a>.
             </p>
           </div>
           <div className="flex justify-center">
             <div className="max-w-[500px] md:max-w-[700px] pt-[3rem]">
-              <Collapsible title="What is your refund policy?">
+              <Collapsible title="What services do you offer?">
                 <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Atque, veniam excepturi sequi eius libero dolorem impedit
-                  dolores natus cum, a nostrum illum minima! Doloremque
-                  architecto cum expedita dolorem porro culpa.
+                  We offer a wide range of services including branding,
+                  development, brand advisory, and more.{" "}
+                  <Link to="/services" className="text-primary">
+                    Learn more
+                  </Link>
+                  .
                 </p>
               </Collapsible>
-              <Collapsible title="How do I cancel my subscription?">
+              <Collapsible title="How can I book an appointment?">
                 <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Aut, neque tenetur repellat obcaecati illum autem officiis
-                  odit excepturi exercitationem repudiandae atque unde nemo,
-                  corporis ratione saepe vitae, eveniet nesciunt beatae.
-                </p>
-              </Collapsible>
-              <Collapsible title="How do I cancel my subscription?">
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Eum vitae neque quidem, in architecto a nam, atque
-                  doloribus eos sequi molestias cumque quo dignissimos
-                  culpa, omnis maiores repudiandae amet dolorum?
-                </p>
-              </Collapsible>
-              <Collapsible title="Can I upgrade my plan?">
-                <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Et libero cupiditate suscipit nisi ipsum quae distinctio
-                  quos architecto cum placeat eum quia, reprehenderit alias
-                  officia accusamus dolores recusandae dolore. Delectus.
-                </p>
-              </Collapsible>
-              <Collapsible title="Can I upgrade my plan?">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptates qui fugit provident vitae unde obcaecati
-                  blanditiis error quo in consequatur aperiam, quis
-                  quibusdam ad quidem dolor explicabo dignissimos facilis
-                  odio!
+                  You can book an appointment by clicking{" "}
+                  <a href="#booking" className="text-primary">
+                    here
+                  </a>
+                  .
                 </p>
               </Collapsible>
             </div>
